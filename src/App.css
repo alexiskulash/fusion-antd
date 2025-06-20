@@ -1,21 +1,40 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* Ant Design App Styles */
+
+.app-layout {
+  min-height: 100vh;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.app-header {
+  background: linear-gradient(135deg, #1890ff 0%, #722ed1 100%);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+.app-content {
+  background: linear-gradient(135deg, #f0f2f5 0%, #e6f7ff 100%);
+  padding: 48px 24px;
+}
+
+.content-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo-section {
+  text-align: center;
+  margin: 24px 0;
+}
+
+.spinning-logo {
+  animation: logo-spin infinite 20s linear;
 }
 
 @keyframes logo-spin {
@@ -27,16 +46,98 @@
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+.main-card {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  border: none;
+}
+
+.main-card .ant-card-head {
+  border-bottom: 1px solid #e8f4fd;
+  background: linear-gradient(135deg, #fafafa 0%, #f0f2f5 100%);
+  border-radius: 12px 12px 0 0;
+}
+
+.counter-section {
+  text-align: center;
+  padding: 16px 0;
+}
+
+.info-card {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+}
+
+.app-footer {
+  text-align: center;
+  background: #001529;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .app-content {
+    padding: 24px 16px;
+  }
+
+  .header-content {
+    padding: 0 16px;
+  }
+
+  .header-content .ant-typography {
+    font-size: 18px !important;
+  }
+
+  .logo-section .ant-space {
+    justify-content: center;
   }
 }
 
-.card {
-  padding: 2em;
+@media (max-width: 576px) {
+  .counter-section .ant-space {
+    flex-direction: column;
+    gap: 12px !important;
+  }
+
+  .info-card .ant-space {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .info-card .ant-btn {
+    width: 100%;
+  }
 }
 
-.read-the-docs {
-  color: #888;
+/* Ant Design theme enhancements */
+.ant-btn-primary {
+  background: linear-gradient(135deg, #1890ff 0%, #40a9ff 100%);
+  border: none;
+  box-shadow: 0 2px 4px rgba(24, 144, 255, 0.3);
+}
+
+.ant-btn-primary:hover {
+  background: linear-gradient(135deg, #40a9ff 0%, #1890ff 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(24, 144, 255, 0.4);
+}
+
+.ant-badge .ant-badge-count {
+  background: #52c41a;
+  box-shadow: 0 2px 4px rgba(82, 196, 26, 0.3);
+}
+
+/* Smooth transitions */
+.ant-btn,
+.ant-card,
+.ant-avatar {
+  transition: all 0.3s ease;
+}
+
+.ant-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
