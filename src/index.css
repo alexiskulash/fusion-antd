@@ -1,68 +1,167 @@
+/* Ant Design Global Styles */
+
+/* Import Ant Design styles */
+@import "antd/dist/reset.css";
+
+/* Global CSS Variables for Ant Design theming */
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* Primary colors */
+  --ant-primary-color: #1890ff;
+  --ant-primary-color-hover: #40a9ff;
+  --ant-primary-color-active: #096dd9;
+
+  /* Text colors */
+  --ant-text-color: rgba(0, 0, 0, 0.85);
+  --ant-text-color-secondary: rgba(0, 0, 0, 0.65);
+  --ant-text-color-inverse: #fff;
+
+  /* Background colors */
+  --ant-background-color-base: #f0f2f5;
+  --ant-background-color-light: #fafafa;
+  --ant-component-background: #fff;
+
+  /* Border and shadows */
+  --ant-border-color-base: #d9d9d9;
+  --ant-box-shadow-base:
+    0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08),
+    0 9px 28px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Global resets and base styles */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", sans-serif;
   line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+  font-size: 14px;
 }
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--ant-background-color-base);
+  color: var(--ant-text-color);
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
+/* Remove default button styles to let Ant Design handle them */
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  all: unset;
 }
 
-@media (prefers-color-scheme: light) {
+/* Ensure proper link styling */
+a {
+  color: var(--ant-primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--ant-primary-color-hover);
+}
+
+/* Code styling */
+code {
+  font-family:
+    "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  background-color: rgba(0, 0, 0, 0.06);
+  border-radius: 3px;
+  padding: 2px 4px;
+  font-size: 0.9em;
+}
+
+/* Scrollbar styling for better UX */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Focus styles for accessibility */
+.ant-btn:focus,
+.ant-input:focus,
+.ant-select:focus {
+  outline: 2px solid var(--ant-primary-color);
+  outline-offset: 2px;
+}
+
+/* Animation utilities */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Responsive utilities */
+@media (max-width: 768px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    --ant-border-color-base: #000;
+    --ant-text-color: #000;
+    --ant-text-color-secondary: #333;
   }
-  a:hover {
-    color: #747bff;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
-  button {
-    background-color: #f9f9f9;
+}
+
+/* Print styles */
+@media print {
+  .ant-btn,
+  .ant-pagination,
+  .ant-steps-action {
+    display: none !important;
+  }
+
+  .ant-card {
+    box-shadow: none !important;
+    border: 1px solid #ccc !important;
   }
 }
