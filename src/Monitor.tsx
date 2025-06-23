@@ -98,43 +98,55 @@ const Monitor: React.FC = () => {
                 className="patient-record-card"
                 style={{ height: "100%" }}
               >
-                {/* Patient Record Tabs */}
-                <Tabs
-                  defaultActiveKey="view"
-                  size="small"
-                  items={[
-                    { key: "view", label: "View" },
-                    { key: "progress", label: "In Progress" },
-                    { key: "details", label: "Details" },
-                    { key: "completed", label: "Completed" },
-                    { key: "files", label: "Files" },
-                  ]}
-                />
-
-                {/* Search and Filter Controls Row */}
-                <Row gutter={[8, 8]} style={{ marginBottom: 16 }}>
-                  <Col span={4}>
-                    <Input placeholder="Search/Refresh" size="small" />
+                {/* Patient Record Checkboxes */}
+                <Row
+                  gutter={[16, 8]}
+                  style={{ marginBottom: 16, alignItems: "center" }}
+                >
+                  <Col>
+                    <Text strong>View:</Text>
                   </Col>
-                  <Col span={3}>
-                    <Input placeholder="Filter" size="small" />
+                  <Col>
+                    <Checkbox defaultChecked>In Progress</Checkbox>
                   </Col>
-                  <Col span={6}>
-                    <DatePicker
-                      placeholder="Last Retrieved Time: 18 Jan 20 08:00"
+                  <Col>
+                    <Checkbox>Details</Checkbox>
+                  </Col>
+                  <Col>
+                    <Checkbox>Completed</Checkbox>
+                  </Col>
+                  <Col>
+                    <Text>Find:</Text>
+                  </Col>
+                  <Col>
+                    <Input
+                      placeholder="Last"
                       size="small"
-                      style={{ width: "100%" }}
+                      style={{ width: 80 }}
                     />
                   </Col>
-                  <Col span={3}>
-                    <Button size="small" type="primary">
-                      Search Data
-                    </Button>
+                  <Col>
+                    <Input
+                      placeholder="First"
+                      size="small"
+                      style={{ width: 80 }}
+                    />
                   </Col>
-                  <Col span={8}>
-                    <Text style={{ fontSize: "11px", color: "#666" }}>
-                      Result/Download TPS was successful.
-                    </Text>
+                  <Col>
+                    <Text>Last Retrieved Time:</Text>
+                  </Col>
+                  <Col>
+                    <Text>18 Jan 20 08:00</Text>
+                  </Col>
+                  <Col>
+                    <Text>Result/Download TPS was successful.</Text>
+                  </Col>
+                </Row>
+
+                {/* Search Data Row */}
+                <Row gutter={[8, 8]} style={{ marginBottom: 16 }}>
+                  <Col>
+                    <Button size="small">Search Data</Button>
                   </Col>
                 </Row>
 
