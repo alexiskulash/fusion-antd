@@ -33,7 +33,6 @@ import {
 const { Sider, Content, Header } = Layout;
 const { Option } = Select;
 const { Text, Title } = Typography;
-const { TabPane } = Tabs;
 
 const Scheduler: React.FC = () => {
   const [form] = Form.useForm();
