@@ -18,6 +18,7 @@ import {
   Progress,
   Divider,
 } from "antd";
+import "./Monitor.css";
 import {
   UserOutlined,
   PlayCircleOutlined,
