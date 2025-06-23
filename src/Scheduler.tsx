@@ -210,7 +210,7 @@ const Scheduler: React.FC = () => {
         <Content className="main-content">
           <div className="content-wrapper">
             {/* Main Layout - Three Column Structure */}
-            <Row gutter={16}>
+            <Row gutter={8}>
               {/* Left Column - vidOps Patient Details */}
               <Col span={8}>
                 <Card
