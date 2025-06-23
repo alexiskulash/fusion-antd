@@ -31,7 +31,6 @@ import {
 const { Content, Header } = Layout;
 const { Option } = Select;
 const { Text, Title } = Typography;
-const { TabPane } = Tabs;
 
 const Monitor: React.FC = () => {
   const [form] = Form.useForm();
