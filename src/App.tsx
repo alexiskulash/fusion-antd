@@ -226,6 +226,90 @@ const App: React.FC = () => {
 
           <Content className="main-content">
             <div className="content-wrapper">
+              {/* Patient Registration Section */}
+              <Row gutter={[16, 16]} style={{ marginBottom: 16 }}>
+                <Col span={24}>
+                  <Card
+                    title="vidOps"
+                    className="info-card patient-registration-card"
+                  >
+                    <Form layout="vertical" size="small">
+                      <Row gutter={16}>
+                        <Col span={6}>
+                          <Form.Item label="Last Name">
+                            <Input placeholder="Last Name" />
+                          </Form.Item>
+                        </Col>
+                        <Col span={6}>
+                          <Form.Item label="First Name">
+                            <Input placeholder="First Name" />
+                          </Form.Item>
+                        </Col>
+                        <Col span={6}>
+                          <Form.Item label="Date of Birth">
+                            <DatePicker
+                              style={{ width: "100%" }}
+                              placeholder="MM/DD/YYYY"
+                            />
+                          </Form.Item>
+                        </Col>
+                        <Col span={6}>
+                          <Form.Item label="Gender">
+                            <Select placeholder="Select Gender">
+                              <Option value="male">Male</Option>
+                              <Option value="female">Female</Option>
+                              <Option value="other">Other</Option>
+                            </Select>
+                          </Form.Item>
+                        </Col>
+                      </Row>
+                      <Row gutter={16}>
+                        <Col span={6}>
+                          <Form.Item label="Patient ID">
+                            <Input placeholder="Patient ID" />
+                          </Form.Item>
+                        </Col>
+                        <Col span={6}>
+                          <Form.Item label="Medical Record No.">
+                            <Input placeholder="MRN" />
+                          </Form.Item>
+                        </Col>
+                        <Col span={6}>
+                          <Form.Item label="Phone Number">
+                            <Input placeholder="Phone" />
+                          </Form.Item>
+                        </Col>
+                        <Col span={6}>
+                          <Form.Item label="Emergency Contact">
+                            <Input placeholder="Emergency Contact" />
+                          </Form.Item>
+                        </Col>
+                      </Row>
+                      <Row gutter={16}>
+                        <Col span={12}>
+                          <Form.Item label="Address">
+                            <Input.TextArea
+                              rows={2}
+                              placeholder="Patient Address"
+                            />
+                          </Form.Item>
+                        </Col>
+                        <Col span={6}>
+                          <Form.Item label="Insurance Provider">
+                            <Input placeholder="Insurance" />
+                          </Form.Item>
+                        </Col>
+                        <Col span={6}>
+                          <Form.Item label="Policy Number">
+                            <Input placeholder="Policy #" />
+                          </Form.Item>
+                        </Col>
+                      </Row>
+                    </Form>
+                  </Card>
+                </Col>
+              </Row>
+
               <Row gutter={[16, 16]}>
                 {/* Medical Information Section */}
                 <Col xs={24} md={12}>
