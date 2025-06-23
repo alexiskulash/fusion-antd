@@ -69,6 +69,20 @@
   padding-bottom: 8px;
 }
 
+.patient-filters {
+  margin-bottom: 12px;
+}
+
+.patient-filters .ant-input {
+  background: #3d3d3d;
+  border: 1px solid #555555;
+  color: #ffffff;
+}
+
+.patient-filters .ant-input::placeholder {
+  color: #888888;
+}
+
 .patients-table {
   background: transparent;
 }
