@@ -549,25 +549,45 @@ const Scheduler: React.FC = () => {
               </Col>
             </Row>
 
-            {/* Bottom Action Bar */}
+            {/* Bottom Notification Bar */}
             <div
-              className="action-buttons"
-              style={{ marginTop: 24, textAlign: "center" }}
+              className="notification-bar"
+              style={{
+                marginTop: 16,
+                padding: "8px 16px",
+                background: "#1a1a1a",
+                borderRadius: "4px",
+                border: "1px solid #444444",
+              }}
             >
-              <Space size="large">
-                <Button icon={<SaveOutlined />} size="small">
-                  Save
-                </Button>
-                <Button icon={<UndoOutlined />} size="small">
-                  Cancel
-                </Button>
-                <Button size="small">Delete</Button>
-                <Button size="small">Live Data</Button>
-                <Button size="small">Prep Studies</Button>
-                <Button type="primary" size="small">
-                  Event
-                </Button>
-              </Space>
+              <Row justify="space-between" align="middle">
+                <Col>
+                  <Text style={{ color: "#cccccc", fontSize: "11px" }}>
+                    Safety relevant information needs to be validated and
+                    confirmed ⚬ Mandatory information
+                  </Text>
+                </Col>
+                <Col>
+                  <Space size="large">
+                    <Button icon={<SaveOutlined />} size="small">
+                      Save
+                    </Button>
+                    <Button icon={<UndoOutlined />} size="small">
+                      Cancel
+                    </Button>
+                    <Button size="small">Delete</Button>
+                    <Button size="small">Live Data</Button>
+                    <Button size="small">Prep Studies</Button>
+                    <Button
+                      type="primary"
+                      size="small"
+                      style={{ background: "#ff6b35", borderColor: "#ff6b35" }}
+                    >
+                      Event
+                    </Button>
+                  </Space>
+                </Col>
+              </Row>
             </div>
           </div>
         </Content>
