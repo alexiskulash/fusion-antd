@@ -315,12 +315,17 @@
 }
 
 .table-content {
-  background: #f0f0f0;
+  background: #fafafa;
   border: 2px solid #d9d9d9;
   border-radius: 8px;
   padding: 16px;
   margin: 8px 0;
   color: rgba(0, 0, 0, 0.85);
+  text-align: center;
+}
+
+.table-content * {
+  color: rgba(0, 0, 0, 0.85) !important;
 }
 
 .controls-card {
@@ -328,6 +333,7 @@
   color: rgba(0, 0, 0, 0.85);
   border: 1px solid #d9d9d9;
   flex: 1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .controls-card .ant-card-body {
