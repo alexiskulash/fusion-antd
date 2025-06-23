@@ -26,7 +26,7 @@ import {
   SearchOutlined,
   UserOutlined,
   CalendarOutlined,
-  MedicalBoxOutlined,
+  MedicineBoxOutlined,
   SettingOutlined,
   SaveOutlined,
   UndoOutlined,
