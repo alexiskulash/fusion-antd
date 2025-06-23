@@ -136,10 +136,29 @@
 
 .info-section-card .ant-input,
 .info-section-card .ant-select-selector {
-  background: #ffffff;
-  border: 1px solid #d9d9d9;
+  background: #6bb3ff !important;
+  border: 1px solid #87ceeb !important;
+  color: #ffffff !important;
   font-size: 11px;
   height: 24px;
+}
+
+.info-section-card .ant-input::placeholder {
+  color: #cccccc !important;
+}
+
+.info-section-card .ant-select-selector .ant-select-selection-search-input {
+  color: #ffffff !important;
+}
+
+.info-section-card .ant-picker {
+  background: #6bb3ff !important;
+  border: 1px solid #87ceeb !important;
+}
+
+.info-section-card .ant-picker .ant-picker-input input {
+  background: transparent !important;
+  color: #ffffff !important;
 }
 
 .other-info-content {
