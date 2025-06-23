@@ -64,11 +64,15 @@ const Monitor: React.FC = () => {
     <Layout className="monitor-layout">
       <Header className="monitor-header">
         <div className="header-content">
-          <Tabs defaultActiveKey="monitor" className="header-tabs">
-            <TabPane tab="Schedule" key="schedule" />
-            <TabPane tab="Monitor" key="monitor" />
-            <TabPane tab="Settings" key="settings" />
-          </Tabs>
+          <Tabs
+            defaultActiveKey="monitor"
+            className="header-tabs"
+            items={[
+              { key: "schedule", label: "Schedule" },
+              { key: "monitor", label: "Monitor" },
+              { key: "settings", label: "Settings" },
+            ]}
+          />
 
           <div className="header-center">
             <Text strong style={{ color: "#ffffff", fontSize: "16px" }}>
