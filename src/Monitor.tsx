@@ -92,8 +92,13 @@ const Monitor: React.FC = () => {
         <Content className="monitor-content">
           <Row gutter={16} style={{ height: "100%" }}>
             {/* Left Panel - Patient Record */}
-            <Col span={12} className="left-panel">
-              <Card title="Patient Record" className="patient-record-card">
+            <Col span={14} className="left-panel">
+              <Card
+                title="Patient Record"
+                className="patient-record-card"
+                style={{ height: "100%" }}
+              >
+                {/* Patient Record Tabs */}
                 <Tabs
                   defaultActiveKey="view"
                   size="small"
@@ -106,68 +111,87 @@ const Monitor: React.FC = () => {
                   ]}
                 />
 
-                <div className="search-section" style={{ margin: "16px 0" }}>
+                {/* Search and Filter Controls */}
+                <div className="search-section" style={{ margin: "12px 0" }}>
                   <Row gutter={8}>
-                    <Col span={6}>
+                    <Col span={4}>
                       <Input placeholder="Search/Refresh" size="small" />
                     </Col>
-                    <Col span={6}>
+                    <Col span={4}>
                       <Input placeholder="Filter" size="small" />
                     </Col>
                     <Col span={6}>
                       <DatePicker
-                        placeholder="Last Retrieved Time"
+                        placeholder="Last Retrieved Time: 18 Jan 20 08:00"
                         size="small"
                         style={{ width: "100%" }}
                       />
                     </Col>
-                    <Col span={6}>
+                    <Col span={4}>
                       <Button size="small" type="primary">
                         Search Data
                       </Button>
                     </Col>
+                    <Col span={6}>
+                      <Text style={{ fontSize: "11px", color: "#666" }}>
+                        Result/Download TPS was successful.
+                      </Text>
+                    </Col>
                   </Row>
                 </div>
 
+                {/* Patient Data Table */}
                 <Table
                   columns={patientRecordColumns}
                   dataSource={patientRecordData}
                   pagination={false}
                   size="small"
                   className="patient-record-table"
+                  style={{ marginBottom: 16 }}
                 />
 
-                {/* Patient, Exam, Other Information sections */}
-                <Row gutter={16} style={{ marginTop: 16 }}>
+                {/* Bottom Three Sections */}
+                <Row gutter={12}>
                   <Col span={8}>
                     <Card
                       title="Patient"
                       size="small"
                       className="info-section-card"
+                      style={{ height: "240px" }}
                     >
-                      <Form layout="vertical" size="small">
-                        <Form.Item label="Name">
+                      <div className="form-fields">
+                        <div className="form-field">
+                          <label>Name:</label>
                           <Input size="small" />
-                        </Form.Item>
-                        <Form.Item label="Patient ID">
+                        </div>
+                        <div className="form-field">
+                          <label>Patient ID:</label>
                           <Input size="small" />
-                        </Form.Item>
-                        <Form.Item label="Height">
+                        </div>
+                        <div className="form-field">
+                          <label>Height:</label>
                           <Input size="small" />
-                        </Form.Item>
-                        <Form.Item label="Date of Birth">
-                          <DatePicker size="small" style={{ width: "100%" }} />
-                        </Form.Item>
-                        <Form.Item label="Sex">
+                        </div>
+                        <div className="form-field">
+                          <label>Date of Birth:</label>
+                          <DatePicker
+                            size="small"
+                            style={{ width: "100%" }}
+                            placeholder="MM/DD/YYYY"
+                          />
+                        </div>
+                        <div className="form-field">
+                          <label>Sex:</label>
                           <Select size="small" style={{ width: "100%" }}>
                             <Option value="M">M</Option>
                             <Option value="F">F</Option>
                           </Select>
-                        </Form.Item>
-                        <Form.Item label="Scheduled">
+                        </div>
+                        <div className="form-field">
+                          <label>Scheduled:</label>
                           <Input size="small" />
-                        </Form.Item>
-                      </Form>
+                        </div>
+                      </div>
                     </Card>
                   </Col>
 
@@ -176,30 +200,47 @@ const Monitor: React.FC = () => {
                       title="Exam"
                       size="small"
                       className="info-section-card"
+                      style={{ height: "240px" }}
                     >
-                      <Form layout="vertical" size="small">
-                        <Form.Item label="Accession">
+                      <div className="form-fields">
+                        <div className="form-field">
+                          <label>Accession:</label>
                           <Input size="small" />
-                        </Form.Item>
-                        <Form.Item label="Exam Description">
+                        </div>
+                        <div className="form-field">
+                          <label>Exam Description:</label>
                           <Input size="small" />
-                        </Form.Item>
-                        <Form.Item label="Date">
+                        </div>
+                        <div className="form-field">
+                          <label>Date:</label>
                           <DatePicker size="small" style={{ width: "100%" }} />
-                        </Form.Item>
-                        <Form.Item label="Description">
+                        </div>
+                        <div className="form-field">
+                          <label>Description:</label>
                           <Input.TextArea rows={2} size="small" />
-                        </Form.Item>
-                        <Form.Item label="Operator">
-                          <Input size="small" />
-                        </Form.Item>
-                        <Form.Item label="Radiologist">
-                          <Input size="small" />
-                        </Form.Item>
-                        <Form.Item label="Referring Physician">
-                          <Input size="small" />
-                        </Form.Item>
-                      </Form>
+                        </div>
+                        <div className="form-field">
+                          <label>Operator:</label>
+                          <Input
+                            size="small"
+                            placeholder="Last Name, First Name"
+                          />
+                        </div>
+                        <div className="form-field">
+                          <label>Radiologist:</label>
+                          <Input
+                            size="small"
+                            placeholder="Last Name, First Name"
+                          />
+                        </div>
+                        <div className="form-field">
+                          <label>Referring Physician:</label>
+                          <Input
+                            size="small"
+                            placeholder="Last Name, First Name"
+                          />
+                        </div>
+                      </div>
                     </Card>
                   </Col>
 
@@ -208,55 +249,65 @@ const Monitor: React.FC = () => {
                       title="Other Information"
                       size="small"
                       className="info-section-card"
+                      style={{ height: "240px" }}
                     >
-                      <div className="other-info-content">
-                        <Text type="secondary">
+                      <div
+                        style={{
+                          fontSize: "11px",
+                          lineHeight: 1.4,
+                          marginBottom: 12,
+                        }}
+                      >
+                        <Text style={{ fontSize: "11px" }}>
                           This is patient sensitive information, please adhere
                           to patient confidentiality rules. Please verify the
                           information entered matches the patient's medical
                           record to identify with the patient to guarantee its
                           accuracy.
                         </Text>
-
-                        <Divider />
-
-                        <Row gutter={16}>
-                          <Col span={12}>
-                            <Text strong>Allergies:</Text>
-                            <div>NONE</div>
-                          </Col>
-                          <Col span={12}>
-                            <Text strong>Preg Alert:</Text>
-                            <div>NONE</div>
-                          </Col>
-                        </Row>
-
-                        <Row gutter={16} style={{ marginTop: 8 }}>
-                          <Col span={12}>
-                            <Text strong>Pregnancy Status:</Text>
-                            <Select
-                              size="small"
-                              defaultValue="No Entry"
-                              style={{ width: "100%" }}
-                            >
-                              <Option value="no">No Entry</Option>
-                              <Option value="yes">Yes</Option>
-                            </Select>
-                          </Col>
-                        </Row>
-
-                        <div style={{ marginTop: 16 }}>
-                          <Text strong>History:</Text>
-                        </div>
-
-                        <Button
-                          type="primary"
-                          size="small"
-                          style={{ marginTop: 16 }}
-                        >
-                          Start Exam
-                        </Button>
                       </div>
+
+                      <div style={{ marginBottom: 8 }}>
+                        <Text strong style={{ fontSize: "11px" }}>
+                          Allergies:{" "}
+                        </Text>
+                        <Text style={{ fontSize: "11px" }}>NONE</Text>
+                      </div>
+
+                      <div style={{ marginBottom: 8 }}>
+                        <Text strong style={{ fontSize: "11px" }}>
+                          Preg Alert:{" "}
+                        </Text>
+                        <Text style={{ fontSize: "11px" }}>NONE</Text>
+                      </div>
+
+                      <div style={{ marginBottom: 8 }}>
+                        <Text strong style={{ fontSize: "11px" }}>
+                          Pregnancy Status:{" "}
+                        </Text>
+                        <Select
+                          size="small"
+                          defaultValue="No Entry"
+                          style={{ width: "100%", fontSize: "11px" }}
+                        >
+                          <Option value="no">No Entry</Option>
+                          <Option value="yes">Yes</Option>
+                        </Select>
+                      </div>
+
+                      <div style={{ marginBottom: 12 }}>
+                        <Text strong style={{ fontSize: "11px" }}>
+                          History:
+                        </Text>
+                      </div>
+
+                      <Button
+                        type="primary"
+                        size="small"
+                        style={{ fontSize: "11px" }}
+                      >
+                        Start Exam
+                      </Button>
                     </Card>
                   </Col>
                 </Row>
@@ -264,21 +315,37 @@ const Monitor: React.FC = () => {
             </Col>
 
             {/* Right Panel - Monitoring Data */}
-            <Col span={12} className="right-panel">
-              <div className="monitoring-sections">
+            <Col span={10} className="right-panel">
+              <div
+                style={{
+                  height: "100%",
+                  display: "flex",
+                  flexDirection: "column",
+                }}
+              >
                 {/* Status Section */}
                 <Card
                   size="small"
                   className="status-card"
-                  style={{ marginBottom: 16 }}
+                  style={{ marginBottom: 12 }}
                 >
-                  <Text>Result/Download TPS was successful.</Text>
-                  <div style={{ marginTop: 8 }}>
-                    <Text type="secondary">Pulsevue</Text>
-                    <Space style={{ float: "right" }}>
-                      <Text>Report Output</Text>
-                      <Text>Auto XLS</Text>
-                    </Space>
+                  <div style={{ fontSize: "12px" }}>
+                    <Text>Result/Download TPS was successful.</Text>
+                    <div
+                      style={{
+                        marginTop: 6,
+                        display: "flex",
+                        justifyContent: "space-between",
+                      }}
+                    >
+                      <Text type="secondary" style={{ fontSize: "11px" }}>
+                        Pulsevue
+                      </Text>
+                      <Space style={{ fontSize: "11px" }}>
+                        <Text>Report Output</Text>
+                        <Text>Auto XLS</Text>
+                      </Space>
+                    </div>
                   </div>
                 </Card>
 
@@ -287,12 +354,23 @@ const Monitor: React.FC = () => {
                   title="Call Body Call ( in request )"
                   size="small"
                   className="call-body-card"
-                  style={{ marginBottom: 16 }}
+                  style={{ marginBottom: 12, flex: 1 }}
                 >
-                  <div className="call-body-content">
+                  <div
+                    className="call-body-content"
+                    style={{ textAlign: "center", padding: "20px" }}
+                  >
                     <div className="pulse-display">
-                      <Text>Pvn P1</Text>
-                      <div>Body/Volume Set</div>
+                      <div
+                        style={{
+                          fontSize: "14px",
+                          fontWeight: "bold",
+                          marginBottom: 4,
+                        }}
+                      >
+                        Pvn P1
+                      </div>
+                      <div style={{ fontSize: "12px" }}>Body/Volume Set</div>
                     </div>
                   </div>
                 </Card>
@@ -302,68 +380,78 @@ const Monitor: React.FC = () => {
                   title="In Table"
                   size="small"
                   className="table-card"
-                  style={{ marginBottom: 16 }}
+                  style={{ marginBottom: 12, flex: 1 }}
                 >
-                  <div className="table-content">
-                    <Text>Body/Volume Set</Text>
+                  <div
+                    className="table-content"
+                    style={{ textAlign: "center", padding: "20px" }}
+                  >
+                    <div style={{ fontSize: "12px" }}>Body/Volume Set</div>
                   </div>
                 </Card>
 
-                {/* Monitoring Controls */}
-                <Card size="small" className="controls-card">
-                  <Row gutter={16}>
-                    <Col span={12}>
-                      <Button block>Apply All</Button>
-                    </Col>
-                    <Col span={12}>
-                      <div className="sar-display">
-                        <Text strong>SAR Display</Text>
-                        <Table
-                          size="small"
-                          columns={[
-                            {
-                              title: "Parameter",
-                              dataIndex: "param",
-                              key: "param",
-                            },
-                            {
-                              title: "Value",
-                              dataIndex: "value",
-                              key: "value",
-                            },
-                            {
-                              title: "Limit",
-                              dataIndex: "limit",
-                              key: "limit",
-                            },
-                            {
-                              title: "Avg/Avg %",
-                              dataIndex: "avg",
-                              key: "avg",
-                            },
-                          ]}
-                          dataSource={[
-                            {
-                              key: "1",
-                              param: "Avg Wkg",
-                              value: "4.2",
-                              limit: ">",
-                              avg: "24.5",
-                            },
-                            {
-                              key: "2",
-                              param: "Live Wkg",
-                              value: "16.0",
-                              limit: ">",
-                              avg: "",
-                            },
-                          ]}
-                          pagination={false}
-                          showHeader={true}
-                        />
-                      </div>
-                    </Col>
-                  </Row>
+                {/* Apply All Button */}
+                <Card size="small" style={{ marginBottom: 12 }}>
+                  <Button block size="small">
+                    Apply All
+                  </Button>
+                </Card>
+
+                {/* SAR Display */}
+                <Card
+                  title="SAR Display"
+                  size="small"
+                  className="sar-card"
+                  style={{ flex: 1 }}
+                >
+                  <Table
+                    size="small"
+                    columns={[
+                      {
+                        title: "Parameter",
+                        dataIndex: "param",
+                        key: "param",
+                        width: 80,
+                      },
+                      {
+                        title: "Value",
+                        dataIndex: "value",
+                        key: "value",
+                        width: 50,
+                      },
+                      {
+                        title: "Limit",
+                        dataIndex: "limit",
+                        key: "limit",
+                        width: 40,
+                      },
+                      {
+                        title: "Avg/Avg %",
+                        dataIndex: "avg",
+                        key: "avg",
+                        width: 60,
+                      },
+                    ]}
+                    dataSource={[
+                      {
+                        key: "1",
+                        param: "Avg Wkg",
+                        value: "4.2",
+                        limit: ">",
+                        avg: "24.5",
+                      },
+                      {
+                        key: "2",
+                        param: "Live Wkg",
+                        value: "16.0",
+                        limit: ">",
+                        avg: "",
+                      },
+                    ]}
+                    pagination={false}
+                    showHeader={true}
+                    style={{ fontSize: "10px" }}
+                  />
                 </Card>
               </div>
             </Col>
