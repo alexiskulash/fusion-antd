@@ -171,14 +171,14 @@
 
 .info-section-card {
   height: 100%;
-  background: #7a8ca0;
-  border: 1px solid #8999ad;
+  background: #e8ecf0;
+  border: 1px solid #d0d7de;
 }
 
 .info-section-card .ant-card-head {
   background: #5c6b7d;
   color: #ffffff;
-  border-bottom: 1px solid #8999ad;
+  border-bottom: 1px solid #d0d7de;
   padding: 8px 16px;
 }
 
@@ -190,8 +190,8 @@
 
 .info-section-card .ant-card-body {
   padding: 12px;
-  background: #7a8ca0;
-  color: #ffffff;
+  background: #e8ecf0;
+  color: rgba(0, 0, 0, 0.85);
 }
 
 .info-section-card .ant-form-item {
