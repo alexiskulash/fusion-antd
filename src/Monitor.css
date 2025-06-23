@@ -406,8 +406,8 @@
 }
 
 .search-section .ant-input {
-  background: #e6f7ff;
-  border: 1px solid #91d5ff;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
   color: rgba(0, 0, 0, 0.85);
 }
 
@@ -416,8 +416,8 @@
 }
 
 .search-section .ant-picker {
-  background: #e6f7ff;
-  border: 1px solid #91d5ff;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
 }
 
 .search-section .ant-picker .ant-picker-input input {
@@ -474,6 +474,11 @@
   line-height: 1.2;
 }
 
+.search-section .ant-input,
+.search-section .ant-btn {
+  height: 28px;
+}
+
 /* Tab customizations */
 .ant-tabs-tab {
   padding: 8px 12px;
@@ -498,30 +503,25 @@
   font-size: 12px;
 }
 
-/* Comprehensive color overrides for consistency */
-.monitor-layout .ant-input,
-.monitor-layout .ant-picker,
-.monitor-layout .ant-select-selector {
-  background: #ffffff !important;
-  border: 1px solid #d9d9d9 !important;
+.status-card {
+  background: #ffffff;
+  color: rgba(0, 0, 0, 0.85);
+  border: 1px solid #d9d9d9;
+}
+
+.status-card .ant-card-body {
+  background: #ffffff;
+  color: rgba(0, 0, 0, 0.85);
+  padding: 12px;
+}
+
+.status-card .ant-typography {
   color: rgba(0, 0, 0, 0.85) !important;
 }
 
-.monitor-layout .ant-input::placeholder {
-  color: rgba(0, 0, 0, 0.25) !important;
+.status-card .ant-typography.ant-typography-secondary {
+  color: rgba(0, 0, 0, 0.65) !important;
 }
-
-.monitor-layout .ant-picker .ant-picker-input input {
-  background: transparent !important;
-  color: rgba(0, 0, 0, 0.85) !important;
-}
-
-.monitor-layout .ant-select-arrow {
-  color: rgba(0, 0, 0, 0.25) !important;
-}
-
-/* Ensure all buttons have proper styling */
-.monitor-layout .ant-btn {
   border: 1px solid #d9d9d9;
   background: #ffffff;
   color: rgba(0, 0, 0, 0.85);
@@ -564,10 +564,7 @@
 .ant-select-dropdown {
   background: #ffffff !important;
   border: 1px solid #d9d9d9 !important;
-  box-shadow:
-    0 3px 6px -4px rgba(0, 0, 0, 0.12),
-    0 6px 16px 0 rgba(0, 0, 0, 0.08),
-    0 9px 28px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
 }
 
 .ant-select-item {
