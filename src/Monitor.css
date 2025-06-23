@@ -1,0 +1,352 @@
+/* Monitor Page Styles */
+
+.monitor-layout {
+  min-height: 100vh;
+  background: #f0f2f5;
+}
+
+.monitor-header {
+  background: #2d2d2d;
+  padding: 0;
+  height: 64px;
+  border-bottom: 1px solid #444444;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 24px;
+  position: relative;
+}
+
+.header-tabs {
+  flex: 0 0 auto;
+}
+
+.header-tabs .ant-tabs-tab {
+  color: #cccccc;
+  background: #3d3d3d;
+  border: 1px solid #555555;
+  margin-right: 4px;
+  border-radius: 4px 4px 0 0;
+}
+
+.header-tabs .ant-tabs-tab-active {
+  background: #1890ff;
+  color: #ffffff;
+}
+
+.header-tabs .ant-tabs-content-holder {
+  display: none;
+}
+
+.header-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header-right {
+  margin-left: auto;
+}
+
+.monitor-content {
+  background: #f0f2f5;
+  padding: 16px;
+  height: calc(100vh - 64px);
+}
+
+.left-panel {
+  height: 100%;
+}
+
+.right-panel {
+  height: 100%;
+}
+
+.patient-record-card {
+  height: 100%;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+}
+
+.patient-record-card .ant-card-head {
+  background: #fafafa;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.patient-record-card .ant-card-body {
+  padding: 16px;
+  height: calc(100% - 57px);
+  overflow-y: auto;
+}
+
+.patient-record-table .ant-table-thead > tr > th {
+  background: #fafafa;
+  border-bottom: 1px solid #d9d9d9;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 8px;
+}
+
+.patient-record-table .ant-table-tbody > tr > td {
+  padding: 4px 8px;
+  font-size: 12px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.patient-record-table .ant-table-tbody > tr:hover {
+  background: #f5f5f5;
+}
+
+.info-section-card {
+  height: 100%;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+}
+
+.info-section-card .ant-card-head {
+  background: #4a5568;
+  color: #ffffff;
+  border-bottom: 1px solid #555555;
+  padding: 8px 16px;
+}
+
+.info-section-card .ant-card-head-title {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.info-section-card .ant-card-body {
+  padding: 12px;
+  background: #6b7280;
+  color: #ffffff;
+}
+
+.info-section-card .ant-form-item {
+  margin-bottom: 8px;
+}
+
+.info-section-card .ant-form-item-label > label {
+  color: #ffffff;
+  font-size: 11px;
+}
+
+.info-section-card .ant-input,
+.info-section-card .ant-select-selector {
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  font-size: 11px;
+  height: 24px;
+}
+
+.other-info-content {
+  color: #ffffff;
+  font-size: 11px;
+}
+
+.other-info-content .ant-typography {
+  color: #cccccc;
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+.monitoring-sections {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.status-card {
+  background: #4a5568;
+  color: #ffffff;
+  border: 1px solid #555555;
+}
+
+.status-card .ant-card-body {
+  background: #4a5568;
+  color: #ffffff;
+  padding: 12px;
+}
+
+.call-body-card {
+  background: #4a5568;
+  color: #ffffff;
+  border: 1px solid #555555;
+}
+
+.call-body-card .ant-card-head {
+  background: #374151;
+  color: #ffffff;
+  border-bottom: 1px solid #555555;
+}
+
+.call-body-card .ant-card-head-title {
+  color: #ffffff;
+  font-size: 13px;
+}
+
+.call-body-card .ant-card-body {
+  background: #6b7280;
+  color: #ffffff;
+  padding: 16px;
+}
+
+.call-body-content {
+  text-align: center;
+}
+
+.pulse-display {
+  background: #5a6268;
+  border: 2px solid #6c757d;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 8px 0;
+}
+
+.table-card {
+  background: #4a5568;
+  color: #ffffff;
+  border: 1px solid #555555;
+}
+
+.table-card .ant-card-head {
+  background: #374151;
+  color: #ffffff;
+  border-bottom: 1px solid #555555;
+}
+
+.table-card .ant-card-head-title {
+  color: #ffffff;
+  font-size: 13px;
+}
+
+.table-card .ant-card-body {
+  background: #6b7280;
+  color: #ffffff;
+  padding: 16px;
+  text-align: center;
+}
+
+.table-content {
+  background: #5a6268;
+  border: 2px solid #6c757d;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 8px 0;
+}
+
+.controls-card {
+  background: #4a5568;
+  color: #ffffff;
+  border: 1px solid #555555;
+  flex: 1;
+}
+
+.controls-card .ant-card-body {
+  background: #4a5568;
+  color: #ffffff;
+  padding: 16px;
+}
+
+.sar-display {
+  background: #6b7280;
+  padding: 12px;
+  border-radius: 4px;
+}
+
+.sar-display .ant-table {
+  background: transparent;
+}
+
+.sar-display .ant-table-thead > tr > th {
+  background: #4a5568;
+  color: #ffffff;
+  border-bottom: 1px solid #555555;
+  font-size: 10px;
+  padding: 4px;
+}
+
+.sar-display .ant-table-tbody > tr > td {
+  background: #6b7280;
+  color: #ffffff;
+  border-bottom: 1px solid #555555;
+  font-size: 10px;
+  padding: 4px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .header-center {
+    position: static;
+    transform: none;
+    margin: 0 16px;
+  }
+
+  .header-content {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 768px) {
+  .monitor-content {
+    padding: 8px;
+  }
+
+  .left-panel,
+  .right-panel {
+    margin-bottom: 16px;
+  }
+
+  .header-content {
+    flex-direction: column;
+    height: auto;
+    padding: 8px 16px;
+  }
+
+  .header-tabs,
+  .header-center,
+  .header-right {
+    margin: 4px 0;
+  }
+}
+
+/* Form adjustments for small cards */
+.info-section-card .ant-form-item-label {
+  padding-bottom: 2px;
+}
+
+.info-section-card .ant-form-item-control {
+  line-height: 1.2;
+}
+
+.search-section .ant-input,
+.search-section .ant-btn {
+  height: 28px;
+}
+
+/* Tab customizations */
+.ant-tabs-tab {
+  padding: 8px 12px;
+  font-size: 12px;
+}
+
+.ant-tabs-tab-btn {
+  color: inherit;
+}
+
+.ant-tabs-content-holder {
+  padding-top: 8px;
+}
+
+/* Button customizations */
+.ant-btn {
+  font-size: 12px;
+}
+
+/* Text size adjustments */
+.ant-typography {
+  font-size: 12px;
+}
