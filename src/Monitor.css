@@ -327,6 +327,30 @@
   height: 28px;
 }
 
+.search-section .ant-input {
+  background: #4a6cf7 !important;
+  border: 1px solid #6bb3ff !important;
+  color: #ffffff !important;
+}
+
+.search-section .ant-input::placeholder {
+  color: #cccccc !important;
+}
+
+.search-section .ant-picker {
+  background: #4a6cf7 !important;
+  border: 1px solid #6bb3ff !important;
+}
+
+.search-section .ant-picker .ant-picker-input input {
+  background: transparent !important;
+  color: #ffffff !important;
+}
+
+.search-section .ant-picker .ant-picker-input input::placeholder {
+  color: #cccccc !important;
+}
+
 /* Tab customizations */
 .ant-tabs-tab {
   padding: 8px 12px;
