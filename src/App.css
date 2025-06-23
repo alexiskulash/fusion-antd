@@ -365,9 +365,37 @@
   border-color: #ff4d4f !important;
 }
 
+/* Compact column layout */
+.column-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 100%;
+}
+
+/* Compact card styling */
+.compact-card {
+  margin-bottom: 8px !important;
+}
+
+.compact-card.ant-card-small .ant-card-head {
+  min-height: 28px !important;
+  padding: 0 8px !important;
+}
+
+.compact-card.ant-card-small .ant-card-head-title {
+  font-size: 11px !important;
+  line-height: 28px !important;
+  font-weight: 600 !important;
+}
+
+.compact-card.ant-card-small .ant-card-body {
+  padding: 6px 8px !important;
+}
+
 /* Form field styling to match original */
 .form-field {
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
 .form-field label {
