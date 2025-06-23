@@ -21,6 +21,7 @@ import {
   theme,
   Tag,
 } from "antd";
+import "./App.css";
 import {
   SearchOutlined,
   UserOutlined,
