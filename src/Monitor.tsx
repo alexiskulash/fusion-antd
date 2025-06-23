@@ -241,15 +241,31 @@ const Monitor: React.FC = () => {
                 />
 
                 {/* Bottom Three Sections */}
-                <Row gutter={12}>
-                  <Col span={8}>
+                <Row gutter={12} style={{ flex: 1, minHeight: 0 }}>
+                  <Col
+                    span={8}
+                    style={{ display: "flex", flexDirection: "column" }}
+                  >
                     <Card
                       title="Patient"
                       size="small"
                       className="info-section-card"
-                      style={{ height: "240px" }}
+                      style={{
+                        flex: 1,
+                        display: "flex",
+                        flexDirection: "column",
+                        minHeight: 0,
+                      }}
                     >
-                      <div className="form-fields">
+                      <div
+                        className="form-fields"
+                        style={{
+                          flex: 1,
+                          display: "flex",
+                          flexDirection: "column",
+                          gap: "8px",
+                        }}
+                      >
                         <div className="form-field">
                           <label>Name:</label>
                           <Input size="small" />
@@ -285,14 +301,30 @@ const Monitor: React.FC = () => {
                     </Card>
                   </Col>
 
-                  <Col span={8}>
+                  <Col
+                    span={8}
+                    style={{ display: "flex", flexDirection: "column" }}
+                  >
                     <Card
                       title="Exam"
                       size="small"
                       className="info-section-card"
-                      style={{ height: "240px" }}
+                      style={{
+                        flex: 1,
+                        display: "flex",
+                        flexDirection: "column",
+                        minHeight: 0,
+                      }}
                     >
-                      <div className="form-fields">
+                      <div
+                        className="form-fields"
+                        style={{
+                          flex: 1,
+                          display: "flex",
+                          flexDirection: "column",
+                          gap: "8px",
+                        }}
+                      >
                         <div className="form-field">
                           <label>Accession:</label>
                           <Input size="small" />
@@ -334,70 +366,88 @@ const Monitor: React.FC = () => {
                     </Card>
                   </Col>
 
-                  <Col span={8}>
+                  <Col
+                    span={8}
+                    style={{ display: "flex", flexDirection: "column" }}
+                  >
                     <Card
                       title="Other Information"
                       size="small"
                       className="info-section-card"
-                      style={{ height: "240px" }}
+                      style={{
+                        flex: 1,
+                        display: "flex",
+                        flexDirection: "column",
+                        minHeight: 0,
+                      }}
                     >
                       <div
                         style={{
-                          fontSize: "11px",
-                          lineHeight: 1.4,
-                          marginBottom: 12,
+                          flex: 1,
+                          display: "flex",
+                          flexDirection: "column",
                         }}
                       >
-                        <Text style={{ fontSize: "11px" }}>
-                          This is patient sensitive information, please adhere
-                          to patient confidentiality rules. Please verify the
-                          information entered matches the patient's medical
-                          record to identify with the patient to guarantee its
-                          accuracy.
-                        </Text>
-                      </div>
-
-                      <div style={{ marginBottom: 8 }}>
-                        <Text strong style={{ fontSize: "11px" }}>
-                          Allergies:{" "}
-                        </Text>
-                        <Text style={{ fontSize: "11px" }}>NONE</Text>
-                      </div>
-
-                      <div style={{ marginBottom: 8 }}>
-                        <Text strong style={{ fontSize: "11px" }}>
-                          Preg Alert:{" "}
-                        </Text>
-                        <Text style={{ fontSize: "11px" }}>NONE</Text>
-                      </div>
-
-                      <div style={{ marginBottom: 8 }}>
-                        <Text strong style={{ fontSize: "11px" }}>
-                          Pregnancy Status:{" "}
-                        </Text>
-                        <Select
-                          size="small"
-                          defaultValue="No Entry"
-                          style={{ width: "100%", fontSize: "11px" }}
+                        <div
+                          style={{
+                            fontSize: "11px",
+                            lineHeight: 1.4,
+                            marginBottom: 12,
+                          }}
                         >
-                          <Option value="no">No Entry</Option>
-                          <Option value="yes">Yes</Option>
-                        </Select>
-                      </div>
+                          <Text style={{ fontSize: "11px" }}>
+                            This is patient sensitive information, please adhere
+                            to patient confidentiality rules. Please verify the
+                            information entered matches the patient's medical
+                            record to identify with the patient to guarantee its
+                            accuracy.
+                          </Text>
+                        </div>
 
-                      <div style={{ marginBottom: 12 }}>
-                        <Text strong style={{ fontSize: "11px" }}>
-                          History:
-                        </Text>
-                      </div>
+                        <div style={{ marginBottom: 8 }}>
+                          <Text strong style={{ fontSize: "11px" }}>
+                            Allergies:{" "}
+                          </Text>
+                          <Text style={{ fontSize: "11px" }}>NONE</Text>
+                        </div>
 
-                      <Button
-                        type="primary"
-                        size="small"
-                        style={{ fontSize: "11px" }}
-                      >
-                        Start Exam
-                      </Button>
+                        <div style={{ marginBottom: 8 }}>
+                          <Text strong style={{ fontSize: "11px" }}>
+                            Preg Alert:{" "}
+                          </Text>
+                          <Text style={{ fontSize: "11px" }}>NONE</Text>
+                        </div>
+
+                        <div style={{ marginBottom: 8 }}>
+                          <Text strong style={{ fontSize: "11px" }}>
+                            Pregnancy Status:{" "}
+                          </Text>
+                          <Select
+                            size="small"
+                            defaultValue="No Entry"
+                            style={{ width: "100%", fontSize: "11px" }}
+                          >
+                            <Option value="no">No Entry</Option>
+                            <Option value="yes">Yes</Option>
+                          </Select>
+                        </div>
+
+                        <div style={{ marginBottom: 12, flex: 1 }}>
+                          <Text strong style={{ fontSize: "11px" }}>
+                            History:
+                          </Text>
+                        </div>
+
+                        <div style={{ marginTop: "auto" }}>
+                          <Button
+                            type="primary"
+                            size="small"
+                            style={{ fontSize: "11px" }}
+                          >
+                            Start Exam
+                          </Button>
+                        </div>
+                      </div>
                     </Card>
                   </Col>
                 </Row>
