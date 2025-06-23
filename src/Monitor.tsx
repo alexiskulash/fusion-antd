@@ -94,13 +94,17 @@ const Monitor: React.FC = () => {
             {/* Left Panel - Patient Record */}
             <Col span={12} className="left-panel">
               <Card title="Patient Record" className="patient-record-card">
-                <Tabs defaultActiveKey="view" size="small">
-                  <TabPane tab="View" key="view" />
-                  <TabPane tab="In Progress" key="progress" />
-                  <TabPane tab="Details" key="details" />
-                  <TabPane tab="Completed" key="completed" />
-                  <TabPane tab="Files" key="files" />
-                </Tabs>
+                <Tabs
+                  defaultActiveKey="view"
+                  size="small"
+                  items={[
+                    { key: "view", label: "View" },
+                    { key: "progress", label: "In Progress" },
+                    { key: "details", label: "Details" },
+                    { key: "completed", label: "Completed" },
+                    { key: "files", label: "Files" },
+                  ]}
+                />
 
                 <div className="search-section" style={{ margin: "16px 0" }}>
                   <Row gutter={8}>
