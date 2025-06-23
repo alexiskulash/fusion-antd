@@ -466,6 +466,33 @@
   padding: 0 4px !important;
 }
 
+/* Notification bar styling to match screenshots */
+.notification-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.notification-bar .ant-btn {
+  height: 28px;
+  border-radius: 3px;
+  font-weight: 500;
+}
+
+.notification-bar .ant-btn:not(.ant-btn-primary) {
+  background: #4a4a4a;
+  border-color: #666666;
+  color: #ffffff;
+}
+
+.notification-bar .ant-btn:not(.ant-btn-primary):hover {
+  background: #5a5a5a;
+  border-color: #777777;
+}
+
 .form-field label {
   display: block;
   color: #cccccc;
