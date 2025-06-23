@@ -152,11 +152,13 @@ const Scheduler: React.FC = () => {
               <Input
                 placeholder="Search Participants"
                 prefix={<SearchOutlined />}
-                className="search-input"
+                className="search-input-large"
+                style={{ marginBottom: 12 }}
               />
               <Select
                 defaultValue="Program Selection"
-                className="program-select"
+                className="program-select-large"
+                style={{ marginBottom: 16 }}
               >
                 <Option value="program1">Program Selection</Option>
               </Select>
@@ -164,9 +166,14 @@ const Scheduler: React.FC = () => {
 
             <div className="patients-section">
               <div className="section-header">
-                <Text strong>Patients</Text>
-                <Text type="secondary" style={{ marginLeft: "16px" }}>
-                  {getFilterStatus()}
+                <Text strong style={{ color: "#ffffff", fontSize: "14px" }}>
+                  Patients
+                </Text>
+                <Text
+                  type="secondary"
+                  style={{ marginLeft: "16px", color: "#aaaaaa" }}
+                >
+                  Scheduled, Today
                 </Text>
               </div>
 
@@ -176,22 +183,22 @@ const Scheduler: React.FC = () => {
                   placeholder="Filter by Patient"
                   value={patientFilter}
                   onChange={(e) => setPatientFilter(e.target.value)}
-                  size="small"
-                  style={{ marginBottom: 4 }}
+                  className="filter-input"
+                  style={{ marginBottom: 8 }}
                 />
                 <Input
                   placeholder="Filter by Procedure"
                   value={procedureFilter}
                   onChange={(e) => setProcedureFilter(e.target.value)}
-                  size="small"
-                  style={{ marginBottom: 4 }}
+                  className="filter-input"
+                  style={{ marginBottom: 8 }}
                 />
                 <Input
                   placeholder="Filter by Date & Time"
                   value={dateTimeFilter}
                   onChange={(e) => setDateTimeFilter(e.target.value)}
-                  size="small"
-                  style={{ marginBottom: 8 }}
+                  className="filter-input"
+                  style={{ marginBottom: 12 }}
                 />
               </div>
 
