@@ -66,6 +66,16 @@
 
 .header-center .ant-typography {
   color: #ffffff !important;
+  text-shadow: none !important;
+}
+
+.header-center .ant-typography strong {
+  color: #ffffff !important;
+  font-weight: 600 !important;
+}
+
+.header-center * {
+  color: #ffffff !important;
 }
 
 .header-right {
