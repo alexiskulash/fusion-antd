@@ -369,28 +369,44 @@
 .column-container {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  height: 100%;
+  gap: 4px;
+  height: calc(100vh - 120px);
 }
 
 /* Compact card styling */
 .compact-card {
-  margin-bottom: 8px !important;
+  margin-bottom: 4px !important;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .compact-card.ant-card-small .ant-card-head {
-  min-height: 28px !important;
-  padding: 0 8px !important;
+  min-height: 24px !important;
+  padding: 0 6px !important;
 }
 
 .compact-card.ant-card-small .ant-card-head-title {
   font-size: 11px !important;
-  line-height: 28px !important;
+  line-height: 24px !important;
   font-weight: 600 !important;
 }
 
 .compact-card.ant-card-small .ant-card-body {
-  padding: 6px 8px !important;
+  padding: 4px 6px !important;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Make textareas fill available space */
+.compact-card .ant-input {
+  flex: 1;
+}
+
+.compact-card .form-field:last-child .ant-input {
+  flex: 1;
+  min-height: 60px;
 }
 
 /* Form field styling to match original */
