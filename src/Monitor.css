@@ -98,6 +98,9 @@
 
 .right-panel {
   height: 100%;
+  background: #4a5568;
+  padding: 12px;
+  border-radius: 4px;
 }
 
 .patient-record-card {
