@@ -338,43 +338,41 @@ const Scheduler: React.FC = () => {
 
               {/* Middle Column - Medical & Examination Info */}
               <Col span={8}>
-                <div style={{ height: "100%" }}>
+                <div className="column-container">
                   {/* Medical Information */}
                   <Card
                     title="Medical Information"
-                    className="info-card"
-                    style={{ marginBottom: 16 }}
+                    className="info-card compact-card"
+                    size="small"
                   >
                     <div className="form-field">
                       <label>Admitting Diagnosis</label>
-                      <Select
-                        placeholder="Select diagnosis"
-                        size="small"
-                        style={{ width: "100%" }}
-                      >
-                        <Option value="dx1">Diagnosis 1</Option>
-                      </Select>
+                      <Input.TextArea rows={3} size="small" />
                     </div>
                   </Card>
 
                   {/* Alerts */}
                   <Card
                     title="Alerts"
-                    className="info-card"
-                    style={{ marginBottom: 16 }}
+                    className="info-card compact-card"
+                    size="small"
                   >
                     <div className="form-field">
                       <label>Medical Alerts</label>
-                      <Input.TextArea rows={2} size="small" />
+                      <Input.TextArea rows={3} size="small" />
                     </div>
                     <div className="form-field">
                       <label>Allergies</label>
-                      <Input.TextArea rows={2} size="small" />
+                      <Input.TextArea rows={3} size="small" />
                     </div>
                   </Card>
 
                   {/* Institution */}
-                  <Card title="Institution" className="info-card">
+                  <Card
+                    title="Institution"
+                    className="info-card compact-card"
+                    size="small"
+                  >
                     <div className="form-field">
                       <label>Institution Name</label>
                       <Select
@@ -389,37 +387,19 @@ const Scheduler: React.FC = () => {
                     </div>
                     <div className="form-field">
                       <label>Performing Physician</label>
-                      <Select
-                        placeholder="Select physician"
-                        size="small"
-                        style={{ width: "100%" }}
-                      >
-                        <Option value="physician1">Physician 1</Option>
-                      </Select>
+                      <Input size="small" />
                     </div>
                     <div className="form-field">
                       <label>Referring Physician</label>
-                      <Select
-                        placeholder="Select physician"
-                        size="small"
-                        style={{ width: "100%" }}
-                      >
-                        <Option value="ref1">Referring Physician 1</Option>
-                      </Select>
+                      <Input size="small" />
                     </div>
                     <div className="form-field">
                       <label>Requesting Physician</label>
-                      <Select
-                        placeholder="Select physician"
-                        size="small"
-                        style={{ width: "100%" }}
-                      >
-                        <Option value="req1">Requesting Physician 1</Option>
-                      </Select>
+                      <Input size="small" />
                     </div>
                     <div className="form-field">
                       <label>Operator</label>
-                      <Input.TextArea rows={2} size="small" />
+                      <Input.TextArea rows={3} size="small" />
                     </div>
                   </Card>
                 </div>
