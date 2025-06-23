@@ -407,12 +407,12 @@ const Scheduler: React.FC = () => {
 
               {/* Right Column - Examination & Program Info */}
               <Col span={8}>
-                <div style={{ height: "100%" }}>
+                <div className="column-container">
                   {/* Examination Information */}
                   <Card
                     title="Examination Information"
-                    className="info-card"
-                    style={{ marginBottom: 16 }}
+                    className="info-card compact-card"
+                    size="small"
                   >
                     <div className="form-field">
                       <label>Procedure</label>
@@ -438,15 +438,15 @@ const Scheduler: React.FC = () => {
                     </div>
                     <div className="form-field">
                       <label>Study Comments</label>
-                      <Input.TextArea rows={2} size="small" />
+                      <Input.TextArea rows={3} size="small" />
                     </div>
                   </Card>
 
                   {/* Program Selection */}
                   <Card
                     title="Program Selection"
-                    className="info-card"
-                    style={{ marginBottom: 16 }}
+                    className="info-card compact-card"
+                    size="small"
                   >
                     <Select
                       defaultValue="USER > LEE > 32 Channel > Amy_Pilot_NoMB"
@@ -457,9 +457,15 @@ const Scheduler: React.FC = () => {
                         USER &gt; LEE &gt; 32 Channel &gt; Amy_Pilot_NoMB
                       </Option>
                     </Select>
-                    <div style={{ marginTop: 8 }}>
+                    <div style={{ marginTop: 4 }}>
                       <Switch size="small" defaultChecked />
-                      <span style={{ marginLeft: 8, fontSize: "11px" }}>
+                      <span
+                        style={{
+                          marginLeft: 8,
+                          fontSize: "11px",
+                          color: "#cccccc",
+                        }}
+                      >
                         Load Program to Queue
                       </span>
                     </div>
@@ -468,8 +474,8 @@ const Scheduler: React.FC = () => {
                   {/* RF Transmit Mode */}
                   <Card
                     title="RF Transmit Mode"
-                    className="info-card"
-                    style={{ marginBottom: 16 }}
+                    className="info-card compact-card"
+                    size="small"
                   >
                     <Select
                       defaultValue="Any Polarization"
@@ -483,19 +489,20 @@ const Scheduler: React.FC = () => {
                   {/* Body Part and Laterality */}
                   <Card
                     title="Body Part and Laterality"
-                    className="info-card"
-                    style={{ marginBottom: 16 }}
+                    className="info-card compact-card"
+                    size="small"
                   >
                     <Row gutter={8}>
                       <Col span={12}>
                         <div className="form-field">
-                          <label>Select</label>
+                          <label>Brain</label>
                           <Select
-                            placeholder="Select"
+                            defaultValue="Select"
                             size="small"
                             style={{ width: "100%" }}
                           >
                             <Option value="brain">Brain</Option>
+                            <Option value="select">Select</Option>
                           </Select>
                         </div>
                       </Col>
@@ -503,7 +510,33 @@ const Scheduler: React.FC = () => {
                         <div className="form-field">
                           <label>Unspecified</label>
                           <Select
-                            placeholder="Unspecified"
+                            defaultValue="Unspecified"
+                            size="small"
+                            style={{ width: "100%" }}
+                          >
+                            <Option value="unspec">Unspecified</Option>
+                          </Select>
+                        </div>
+                      </Col>
+                    </Row>
+                    <Row gutter={8} style={{ marginTop: 4 }}>
+                      <Col span={12}>
+                        <div className="form-field">
+                          <label>Select</label>
+                          <Select
+                            defaultValue="Select"
+                            size="small"
+                            style={{ width: "100%" }}
+                          >
+                            <Option value="select">Select</Option>
+                          </Select>
+                        </div>
+                      </Col>
+                      <Col span={12}>
+                        <div className="form-field">
+                          <label>Unspecified</label>
+                          <Select
+                            defaultValue="Unspecified"
                             size="small"
                             style={{ width: "100%" }}
                           >
@@ -515,12 +548,17 @@ const Scheduler: React.FC = () => {
                   </Card>
 
                   {/* Patient Orientation */}
-                  <Card title="Patient Orientation" className="info-card">
+                  <Card
+                    title="Patient Orientation"
+                    className="info-card compact-card"
+                    size="small"
+                  >
                     <Select
                       defaultValue="Select"
                       style={{ width: "100%" }}
                       size="small"
                     >
+                      <Option value="select">Select</Option>
                       <Option value="supine">Supine</Option>
                       <Option value="prone">Prone</Option>
                     </Select>
