@@ -481,31 +481,45 @@ const Monitor: React.FC = () => {
                   height: "100%",
                   display: "flex",
                   flexDirection: "column",
+                  gap: "8px",
                 }}
               >
-                {/* Status Section */}
+                {/* Status Section with Tabs */}
                 <Card
                   size="small"
                   className="status-card"
-                  style={{ marginBottom: 12 }}
+                  style={{ marginBottom: 8 }}
                 >
-                  <div style={{ fontSize: "12px" }}>
-                    <Text>Result/Download TPS was successful.</Text>
-                    <div
+                  <div style={{ fontSize: "12px", marginBottom: 8 }}>
+                    <Text style={{ color: "#ffffff" }}>
+                      Result/Download TPS was successful.
+                    </Text>
+                  </div>
+                  <div
+                    style={{ display: "flex", gap: "16px", marginBottom: 8 }}
+                  >
+                    <Text style={{ color: "#cccccc", fontSize: "11px" }}>
+                      Pulsevue
+                    </Text>
+                    <Text
                       style={{
-                        marginTop: 6,
-                        display: "flex",
-                        justifyContent: "space-between",
+                        color: "#ffffff",
+                        fontSize: "11px",
+                        borderBottom: "2px solid #52c41a",
                       }}
                     >
-                      <Text type="secondary" style={{ fontSize: "11px" }}>
-                        Pulsevue
-                      </Text>
-                      <Space style={{ fontSize: "11px" }}>
-                        <Text>Report Output</Text>
-                        <Text>Auto XLS</Text>
-                      </Space>
-                    </div>
+                      Report Output
+                    </Text>
+                    <Text style={{ color: "#ffffff", fontSize: "11px" }}>
+                      Auto XLS
+                    </Text>
+                  </div>
+                  <div style={{ marginTop: 8 }}>
+                    <Checkbox style={{ color: "#ffffff" }}>
+                      <span style={{ color: "#ffffff", fontSize: "11px" }}>
+                        T/R Body Coil (in magnet.)
+                      </span>
+                    </Checkbox>
                   </div>
                 </Card>
 
@@ -514,18 +528,27 @@ const Monitor: React.FC = () => {
                   title="Call Body Call ( in request )"
                   size="small"
                   className="call-body-card"
-                  style={{ marginBottom: 12, flex: 1 }}
+                  style={{ marginBottom: 8, flex: 1 }}
                 >
                   <div
                     className="call-body-content"
-                    style={{ textAlign: "center", padding: "20px" }}
+                    style={{ textAlign: "center", padding: "16px" }}
                   >
-                    <div className="pulse-display">
+                    <div
+                      className="pulse-display"
+                      style={{
+                        background: "#6b7c8f",
+                        border: "2px solid #7c8da0",
+                        borderRadius: "8px",
+                        padding: "24px",
+                        color: "#ffffff",
+                      }}
+                    >
                       <div
                         style={{
-                          fontSize: "14px",
+                          fontSize: "16px",
                           fontWeight: "bold",
-                          marginBottom: 4,
+                          marginBottom: 6,
                         }}
                       >
                         Pvn P1
@@ -535,27 +558,44 @@ const Monitor: React.FC = () => {
                   </div>
                 </Card>
 
-                {/* Table Section */}
+                {/* In Table Section */}
                 <Card
                   title="In Table"
                   size="small"
                   className="table-card"
-                  style={{ marginBottom: 12, flex: 1 }}
+                  style={{ marginBottom: 8, flex: 1 }}
                 >
                   <div
                     className="table-content"
-                    style={{ textAlign: "center", padding: "20px" }}
+                    style={{ textAlign: "center", padding: "16px" }}
                   >
-                    <div style={{ fontSize: "12px" }}>Body/Volume Set</div>
+                    <div
+                      style={{
+                        background: "#6b7c8f",
+                        border: "2px solid #7c8da0",
+                        borderRadius: "8px",
+                        padding: "20px",
+                        color: "#ffffff",
+                      }}
+                    >
+                      <div style={{ fontSize: "12px", marginBottom: 4 }}>
+                        Body/Volume Set
+                      </div>
+                      <div style={{ fontSize: "11px", color: "#cccccc" }}>
+                        Spine Posterior 32ch
+                      </div>
+                    </div>
                   </div>
                 </Card>
 
-                {/* Apply All Button */}
-                <Card size="small" style={{ marginBottom: 12 }}>
-                  <Button block size="small">
-                    Apply All
-                  </Button>
-                </Card>
+                {/* Apply All Checkbox */}
+                <div style={{ marginBottom: 8 }}>
+                  <Checkbox style={{ color: "#ffffff" }}>
+                    <span style={{ color: "#ffffff", fontSize: "12px" }}>
+                      Apply All
+                    </span>
+                  </Checkbox>
+                </div>
 
                 {/* SAR Display */}
                 <Card
@@ -564,54 +604,74 @@ const Monitor: React.FC = () => {
                   className="sar-card"
                   style={{ flex: 1 }}
                 >
-                  <Table
-                    size="small"
-                    columns={[
-                      {
-                        title: "Parameter",
-                        dataIndex: "param",
-                        key: "param",
-                        width: 80,
-                      },
-                      {
-                        title: "Value",
-                        dataIndex: "value",
-                        key: "value",
-                        width: 50,
-                      },
-                      {
-                        title: "Limit",
-                        dataIndex: "limit",
-                        key: "limit",
-                        width: 40,
-                      },
-                      {
-                        title: "Avg/Avg %",
-                        dataIndex: "avg",
-                        key: "avg",
-                        width: 60,
-                      },
-                    ]}
-                    dataSource={[
-                      {
-                        key: "1",
-                        param: "Avg Wkg",
-                        value: "4.2",
-                        limit: ">",
-                        avg: "24.5",
-                      },
-                      {
-                        key: "2",
-                        param: "Live Wkg",
-                        value: "16.0",
-                        limit: ">",
-                        avg: "",
-                      },
-                    ]}
-                    pagination={false}
-                    showHeader={true}
-                    style={{ fontSize: "10px" }}
-                  />
+                  <div
+                    style={{
+                      background: "#6b7c8f",
+                      borderRadius: "4px",
+                      padding: "12px",
+                    }}
+                  >
+                    <div
+                      style={{
+                        display: "grid",
+                        gridTemplateColumns: "1fr 1fr 1fr 1fr",
+                        gap: "8px",
+                        marginBottom: "8px",
+                        fontSize: "11px",
+                        fontWeight: "bold",
+                        color: "#ffffff",
+                      }}
+                    >
+                      <div>Parameter</div>
+                      <div>Value</div>
+                      <div>Limit</div>
+                      <div>Avg/Avg %</div>
+                    </div>
+                    <div
+                      style={{
+                        display: "grid",
+                        gridTemplateColumns: "1fr 1fr 1fr 1fr",
+                        gap: "8px",
+                        marginBottom: "4px",
+                        fontSize: "11px",
+                        color: "#ffffff",
+                      }}
+                    >
+                      <div>Avg Wkg</div>
+                      <div>4.2</div>
+                      <div>&gt;</div>
+                      <div>24.5</div>
+                    </div>
+                    <div
+                      style={{
+                        display: "grid",
+                        gridTemplateColumns: "1fr 1fr 1fr 1fr",
+                        gap: "8px",
+                        marginBottom: "4px",
+                        fontSize: "11px",
+                        color: "#ffffff",
+                      }}
+                    >
+                      <div>Live Wkg</div>
+                      <div>16.0</div>
+                      <div>&gt;</div>
+                      <div></div>
+                    </div>
+                    <div
+                      style={{
+                        display: "grid",
+                        gridTemplateColumns: "1fr 1fr 1fr 1fr",
+                        gap: "8px",
+                        fontSize: "11px",
+                        color: "#ffffff",
+                      }}
+                    >
+                      <div>Act Wkg</div>
+                      <div>0.0</div>
+                      <div></div>
+                      <div>0.0</div>
+                    </div>
+                  </div>
                 </Card>
               </div>
             </Col>
