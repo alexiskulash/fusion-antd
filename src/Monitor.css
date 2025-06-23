@@ -24,18 +24,23 @@
   flex: 0 0 auto;
 }
 
+.header-tabs .ant-tabs-nav {
+  margin-bottom: 0 !important;
+}
+
 .header-tabs .ant-tabs-tab {
   color: #ffffff !important;
-  background: #002140 !important;
-  border: 1px solid #096dd9 !important;
-  margin-right: 4px;
-  border-radius: 4px 4px 0 0;
+  background: #34495e !important;
+  border: 1px solid #4a5568 !important;
+  margin-right: 8px;
+  border-radius: 4px !important;
   padding: 8px 16px !important;
+  margin-bottom: 0 !important;
 }
 
 .header-tabs .ant-tabs-tab:hover {
   color: #ffffff !important;
-  background: #0050b3 !important;
+  background: #4a5568 !important;
 }
 
 .header-tabs .ant-tabs-tab-active {
@@ -51,11 +56,16 @@
 .header-tabs .ant-tabs-tab-btn {
   color: #ffffff !important;
   text-shadow: none !important;
+  font-size: 14px !important;
 }
 
 .header-tabs .ant-tabs-tab-active .ant-tabs-tab-btn {
   color: #ffffff !important;
   text-shadow: none !important;
+}
+
+.header-tabs .ant-tabs-ink-bar {
+  display: none !important;
 }
 
 .header-center {
