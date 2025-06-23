@@ -406,18 +406,18 @@
 }
 
 .search-section .ant-input {
-  background: #ffffff;
-  border: 1px solid #d9d9d9;
+  background: #e6f7ff;
+  border: 1px solid #91d5ff;
   color: rgba(0, 0, 0, 0.85);
 }
 
 .search-section .ant-input::placeholder {
-  color: rgba(0, 0, 0, 0.25);
+  color: rgba(0, 0, 0, 0.45);
 }
 
 .search-section .ant-picker {
-  background: #ffffff;
-  border: 1px solid #d9d9d9;
+  background: #e6f7ff;
+  border: 1px solid #91d5ff;
 }
 
 .search-section .ant-picker .ant-picker-input input {
@@ -426,7 +426,7 @@
 }
 
 .search-section .ant-picker .ant-picker-input input::placeholder {
-  color: rgba(0, 0, 0, 0.25);
+  color: rgba(0, 0, 0, 0.45);
 }
 
 /* Responsive adjustments */
