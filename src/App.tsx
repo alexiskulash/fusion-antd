@@ -41,6 +41,9 @@ const { TabPane } = Tabs;
 const App: React.FC = () => {
   const [form] = Form.useForm();
   const [selectedPatient, setSelectedPatient] = useState<string>("vidOps");
+  const [patientFilter, setPatientFilter] = useState<string>("");
+  const [procedureFilter, setProcedureFilter] = useState<string>("");
+  const [dateTimeFilter, setDateTimeFilter] = useState<string>("");
 
   // Patient data for the table
   const patientData = [
@@ -50,14 +53,45 @@ const App: React.FC = () => {
       id: "001",
       status: "scheduled",
       time: "8:30 AM",
+      date: "2024-01-15",
+      procedure: "Research MRI",
     },
   ];
 
+  // Filter patients based on applied filters
+  const filteredPatients = patientData.filter((patient) => {
+    const matchesPatient =
+      !patientFilter ||
+      patient.name.toLowerCase().includes(patientFilter.toLowerCase());
+    const matchesProcedure =
+      !procedureFilter ||
+      patient.procedure.toLowerCase().includes(procedureFilter.toLowerCase());
+    const matchesDateTime =
+      !dateTimeFilter ||
+      patient.time.includes(dateTimeFilter) ||
+      patient.date.includes(dateTimeFilter);
+    return matchesPatient && matchesProcedure && matchesDateTime;
+  });
+
+  // Generate filter status text
+  const getFilterStatus = () => {
+    const filters = [];
+    if (patientFilter) filters.push(`Patient: ${patientFilter}`);
+    if (procedureFilter) filters.push(`Procedure: ${procedureFilter}`);
+    if (dateTimeFilter) filters.push(`Date/Time: ${dateTimeFilter}`);
+
+    if (filters.length === 0) {
+      return "Scheduled, Today";
+    }
+    return filters.join(", ");
+  };
+
   const patientColumns = [
     {
-      title: "Patients",
+      title: "Patient",
       dataIndex: "name",
       key: "name",
+      sorter: (a: any, b: any) => a.name.localeCompare(b.name),
       render: (text: string, record: any) => (
         <div
           className={`patient-row ${selectedPatient === text ? "selected" : ""}`}
@@ -68,6 +102,29 @@ const App: React.FC = () => {
           {record.status === "scheduled" && (
             <Badge status="success" style={{ marginLeft: 8 }} />
           )}
+        </div>
+      ),
+    },
+    {
+      title: "Procedure",
+      dataIndex: "procedure",
+      key: "procedure",
+      sorter: (a: any, b: any) => a.procedure.localeCompare(b.procedure),
+      render: (text: string) => (
+        <Text style={{ color: "#cccccc", fontSize: "12px" }}>{text}</Text>
+      ),
+    },
+    {
+      title: "Date & Time",
+      dataIndex: "time",
+      key: "time",
+      sorter: (a: any, b: any) => a.time.localeCompare(b.time),
+      render: (text: string, record: any) => (
+        <div>
+          <div style={{ color: "#cccccc", fontSize: "12px" }}>
+            {record.date}
+          </div>
+          <div style={{ color: "#cccccc", fontSize: "12px" }}>{text}</div>
         </div>
       ),
     },
