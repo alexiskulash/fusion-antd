@@ -171,14 +171,14 @@
 
 .info-section-card {
   height: 100%;
-  background: #627688;
-  border: 1px solid #556175;
+  background: #7a8ca0;
+  border: 1px solid #8999ad;
 }
 
 .info-section-card .ant-card-head {
-  background: #4a5568;
+  background: #5c6b7d;
   color: #ffffff;
-  border-bottom: 1px solid #556175;
+  border-bottom: 1px solid #8999ad;
   padding: 8px 16px;
 }
 
@@ -190,7 +190,7 @@
 
 .info-section-card .ant-card-body {
   padding: 12px;
-  background: #627688;
+  background: #7a8ca0;
   color: #ffffff;
 }
 
