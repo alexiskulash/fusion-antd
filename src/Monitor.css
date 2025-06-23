@@ -1,15 +1,15 @@
-/* Monitor Page Styles - Blue Theme Throughout */
+/* Monitor Page Styles - Slate Blue Theme Throughout */
 
 .monitor-layout {
   min-height: 100vh;
-  background: #e6f3ff;
+  background: #f0f2f5;
 }
 
 .monitor-header {
-  background: #001529;
+  background: #2c3e50;
   padding: 0;
   height: 64px;
-  border-bottom: 1px solid #1890ff;
+  border-bottom: 1px solid #34495e;
 }
 
 .header-content {
