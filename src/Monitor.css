@@ -171,27 +171,38 @@
 
 .info-section-card {
   height: 100%;
-  background: #4a5568;
-  border: 1px solid #5a6c7d;
+  background: #4a5568 !important;
+  border: 1px solid #5a6c7d !important;
 }
 
 .info-section-card .ant-card-head {
-  background: #2d3748;
-  color: #ffffff;
-  border-bottom: 1px solid #4a5568;
+  background: #2d3748 !important;
+  color: #ffffff !important;
+  border-bottom: 1px solid #4a5568 !important;
   padding: 8px 16px;
 }
 
 .info-section-card .ant-card-head-title {
-  color: #ffffff;
+  color: #ffffff !important;
   font-size: 14px;
   font-weight: 600;
 }
 
 .info-section-card .ant-card-body {
   padding: 12px;
-  background: #4a5568;
-  color: #ffffff;
+  background: #4a5568 !important;
+  color: #ffffff !important;
+}
+
+/* Force dark theme on all card elements */
+.info-section-card.ant-card {
+  background: #4a5568 !important;
+  border: 1px solid #5a6c7d !important;
+}
+
+.info-section-card.ant-card .ant-card-body {
+  background: #4a5568 !important;
+  color: #ffffff !important;
 }
 
 .info-section-card .ant-form-item {
