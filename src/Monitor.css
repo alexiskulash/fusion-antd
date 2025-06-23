@@ -107,9 +107,9 @@
 }
 
 .info-section-card .ant-card-head {
-  background: #4a5568;
+  background: #2c5aa0;
   color: #ffffff;
-  border-bottom: 1px solid #555555;
+  border-bottom: 1px solid #4a6cf7;
   padding: 8px 16px;
 }
 
@@ -121,7 +121,7 @@
 
 .info-section-card .ant-card-body {
   padding: 12px;
-  background: #6b7280;
+  background: #4f80c7;
   color: #ffffff;
 }
 
