@@ -615,3 +615,100 @@
   background: #1890ff !important;
   color: #ffffff !important;
 }
+
+/* Right panel blue theme matching screenshot */
+.right-panel .ant-card {
+  background: #4a5568 !important;
+  border: 1px solid #5a6c7d !important;
+  color: #ffffff !important;
+}
+
+.right-panel .ant-card-head {
+  background: #3a4553 !important;
+  border-bottom: 1px solid #5a6c7d !important;
+  color: #ffffff !important;
+}
+
+.right-panel .ant-card-head-title {
+  color: #ffffff !important;
+}
+
+.right-panel .ant-card-body {
+  background: #4a5568 !important;
+  color: #ffffff !important;
+}
+
+.right-panel .ant-typography {
+  color: #ffffff !important;
+}
+
+.right-panel .ant-btn {
+  background: #5a6c7d;
+  border-color: #6b7c8f;
+  color: #ffffff;
+}
+
+.right-panel .ant-btn:hover {
+  background: #6b7c8f;
+  border-color: #7c8da0;
+  color: #ffffff;
+}
+
+/* SAR Display table styling */
+.sar-card .ant-table {
+  background: transparent !important;
+}
+
+.sar-card .ant-table-thead > tr > th {
+  background: #3a4553 !important;
+  color: #ffffff !important;
+  border-bottom: 1px solid #5a6c7d !important;
+  font-size: 10px !important;
+  padding: 4px !important;
+}
+
+.sar-card .ant-table-tbody > tr > td {
+  background: #4a5568 !important;
+  color: #ffffff !important;
+  border-bottom: 1px solid #5a6c7d !important;
+  font-size: 10px !important;
+  padding: 4px !important;
+}
+
+/* Form fields styling for Patient, Exam, Other Info sections */
+.form-fields .form-field {
+  margin-bottom: 6px;
+}
+
+.form-fields .form-field label {
+  display: block;
+  font-size: 11px;
+  color: rgba(0, 0, 0, 0.85);
+  margin-bottom: 2px;
+  font-weight: normal;
+}
+
+.form-fields .form-field .ant-input,
+.form-fields .form-field .ant-select,
+.form-fields .form-field .ant-picker {
+  font-size: 11px;
+  height: 22px;
+}
+
+/* Compact spacing for bottom sections */
+.info-section-card .ant-card-body {
+  padding: 8px !important;
+}
+
+/* Blue theme for pulse display */
+.call-body-card .pulse-display {
+  background: #5a6c7d !important;
+  border: 2px solid #6b7c8f !important;
+  color: #ffffff !important;
+}
+
+.table-card .table-content {
+  background: #5a6c7d !important;
+  border: 2px solid #6b7c8f !important;
+  color: #ffffff !important;
+}
