@@ -493,6 +493,93 @@
   border-color: #777777;
 }
 
+/* Sidebar styling to match screenshots */
+.search-input-large {
+  height: 40px !important;
+  background: #5a6c7d !important;
+  border: 1px solid #6a7c8d !important;
+  border-radius: 6px !important;
+  color: #ffffff !important;
+}
+
+.search-input-large .ant-input {
+  background: transparent !important;
+  color: #ffffff !important;
+  font-size: 14px !important;
+  height: 36px !important;
+}
+
+.search-input-large .ant-input::placeholder {
+  color: #cccccc !important;
+}
+
+.program-select-large {
+  height: 40px !important;
+  width: 100% !important;
+}
+
+.program-select-large .ant-select-selector {
+  height: 40px !important;
+  background: #5a6c7d !important;
+  border: 1px solid #6a7c8d !important;
+  border-radius: 6px !important;
+  color: #ffffff !important;
+}
+
+.program-select-large .ant-select-selection-item {
+  color: #ffffff !important;
+  font-size: 14px !important;
+  line-height: 38px !important;
+}
+
+.filter-input {
+  height: 32px !important;
+  background: #4a4a4a !important;
+  border: 1px solid #666666 !important;
+  border-radius: 4px !important;
+  color: #ffffff !important;
+}
+
+.filter-input .ant-input {
+  background: transparent !important;
+  color: #ffffff !important;
+  font-size: 13px !important;
+}
+
+.filter-input .ant-input::placeholder {
+  color: #aaaaaa !important;
+}
+
+/* Patient table styling to match screenshots */
+.patients-table .ant-table-thead > tr > th {
+  background: #4a4a4a !important;
+  border-bottom: 1px solid #666666 !important;
+  color: #ffffff !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  padding: 8px 12px !important;
+}
+
+.patients-table .ant-table-tbody > tr {
+  background: transparent !important;
+  border-bottom: 1px solid #555555 !important;
+}
+
+.patients-table .ant-table-tbody > tr:hover {
+  background: #3a3a3a !important;
+}
+
+.patients-table .ant-table-tbody > tr.ant-table-row-selected {
+  background: #1890ff !important;
+}
+
+.patients-table .ant-table-tbody > tr > td {
+  padding: 12px !important;
+  border-bottom: 1px solid #555555 !important;
+  color: #ffffff !important;
+  font-size: 13px !important;
+}
+
 .form-field label {
   display: block;
   color: #cccccc;
