@@ -259,7 +259,7 @@ const App: React.FC = () => {
                             <Input size="small" />
                           </Form.Item>
                         </Col>
-                        <Col span={3}>
+                        <Col span={4}>
                           <Form.Item label="DOB" style={{ marginBottom: 8 }}>
                             <DatePicker
                               size="small"
@@ -267,22 +267,17 @@ const App: React.FC = () => {
                             />
                           </Form.Item>
                         </Col>
-                        <Col span={3}>
+                        <Col span={4}>
                           <Form.Item label="Age" style={{ marginBottom: 8 }}>
                             <Input size="small" />
                           </Form.Item>
                         </Col>
-                        <Col span={3}>
+                        <Col span={4}>
                           <Form.Item label="Gender" style={{ marginBottom: 8 }}>
                             <Select size="small" style={{ width: "100%" }}>
                               <Option value="M">M</Option>
                               <Option value="F">F</Option>
                             </Select>
-                          </Form.Item>
-                        </Col>
-                        <Col span={3}>
-                          <Form.Item label="Weight" style={{ marginBottom: 8 }}>
-                            <Input size="small" />
                           </Form.Item>
                         </Col>
                       </Row>
@@ -325,7 +320,10 @@ const App: React.FC = () => {
                           </Form.Item>
                         </Col>
                         <Col span={4}>
-                          <Form.Item label="Height" style={{ marginBottom: 8 }}>
+                          <Form.Item
+                            label="Weight/Height"
+                            style={{ marginBottom: 8 }}
+                          >
                             <Input size="small" />
                           </Form.Item>
                         </Col>
