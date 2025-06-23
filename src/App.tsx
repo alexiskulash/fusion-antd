@@ -39,9 +39,11 @@ const Navigation: React.FC = () => {
 };
 
 const AppContent: React.FC = () => {
+  const location = useLocation();
+
   return (
     <div>
-      <Navigation />
+      {location.pathname !== "/monitor" && <Navigation />}
       <Routes>
         <Route path="/" element={<Scheduler />} />
         <Route path="/monitor" element={<Monitor />} />
