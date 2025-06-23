@@ -80,6 +80,8 @@
   padding: 16px;
   height: calc(100% - 57px);
   overflow-y: auto;
+  background: #ffffff !important;
+  color: rgba(0, 0, 0, 0.85) !important;
 }
 
 .patient-record-table .ant-table-thead > tr > th {
