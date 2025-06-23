@@ -1,4 +1,4 @@
-/* Monitor Page Styles - Using Ant Design Standards */
+/* Monitor Page Styles - Consistent Design with Proper Contrast */
 
 .monitor-layout {
   min-height: 100vh;
@@ -25,16 +25,23 @@
 }
 
 .header-tabs .ant-tabs-tab {
-  color: rgba(255, 255, 255, 0.65);
-  background: #002140;
-  border: 1px solid #096dd9;
+  color: #ffffff !important;
+  background: #002140 !important;
+  border: 1px solid #096dd9 !important;
   margin-right: 4px;
   border-radius: 4px 4px 0 0;
+  padding: 8px 16px !important;
+}
+
+.header-tabs .ant-tabs-tab:hover {
+  color: #ffffff !important;
+  background: #0050b3 !important;
 }
 
 .header-tabs .ant-tabs-tab-active {
-  background: #1890ff;
-  color: #ffffff;
+  background: #1890ff !important;
+  color: #ffffff !important;
+  border-color: #1890ff !important;
 }
 
 .header-tabs .ant-tabs-content-holder {
@@ -47,8 +54,16 @@
   transform: translateX(-50%);
 }
 
+.header-center .ant-typography {
+  color: #ffffff !important;
+}
+
 .header-right {
   margin-left: auto;
+}
+
+.header-right .ant-typography {
+  color: rgba(255, 255, 255, 0.85) !important;
 }
 
 .monitor-content {
