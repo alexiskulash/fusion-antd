@@ -234,74 +234,99 @@ const App: React.FC = () => {
                     className="info-card patient-registration-card"
                   >
                     <Form layout="vertical" size="small">
-                      <Row gutter={16}>
-                        <Col span={6}>
-                          <Form.Item label="Last Name">
-                            <Input placeholder="Last Name" />
+                      <Row gutter={8}>
+                        <Col span={4}>
+                          <Form.Item
+                            label="Last Name"
+                            style={{ marginBottom: 8 }}
+                          >
+                            <Input size="small" />
                           </Form.Item>
                         </Col>
-                        <Col span={6}>
-                          <Form.Item label="First Name">
-                            <Input placeholder="First Name" />
+                        <Col span={4}>
+                          <Form.Item
+                            label="First Name"
+                            style={{ marginBottom: 8 }}
+                          >
+                            <Input size="small" />
                           </Form.Item>
                         </Col>
-                        <Col span={6}>
-                          <Form.Item label="Date of Birth">
+                        <Col span={4}>
+                          <Form.Item
+                            label="Middle Name"
+                            style={{ marginBottom: 8 }}
+                          >
+                            <Input size="small" />
+                          </Form.Item>
+                        </Col>
+                        <Col span={3}>
+                          <Form.Item label="DOB" style={{ marginBottom: 8 }}>
                             <DatePicker
+                              size="small"
                               style={{ width: "100%" }}
-                              placeholder="MM/DD/YYYY"
                             />
                           </Form.Item>
                         </Col>
-                        <Col span={6}>
-                          <Form.Item label="Gender">
-                            <Select placeholder="Select Gender">
-                              <Option value="male">Male</Option>
-                              <Option value="female">Female</Option>
-                              <Option value="other">Other</Option>
+                        <Col span={3}>
+                          <Form.Item label="Age" style={{ marginBottom: 8 }}>
+                            <Input size="small" />
+                          </Form.Item>
+                        </Col>
+                        <Col span={3}>
+                          <Form.Item label="Gender" style={{ marginBottom: 8 }}>
+                            <Select size="small" style={{ width: "100%" }}>
+                              <Option value="M">M</Option>
+                              <Option value="F">F</Option>
                             </Select>
                           </Form.Item>
                         </Col>
-                      </Row>
-                      <Row gutter={16}>
-                        <Col span={6}>
-                          <Form.Item label="Patient ID">
-                            <Input placeholder="Patient ID" />
-                          </Form.Item>
-                        </Col>
-                        <Col span={6}>
-                          <Form.Item label="Medical Record No.">
-                            <Input placeholder="MRN" />
-                          </Form.Item>
-                        </Col>
-                        <Col span={6}>
-                          <Form.Item label="Phone Number">
-                            <Input placeholder="Phone" />
-                          </Form.Item>
-                        </Col>
-                        <Col span={6}>
-                          <Form.Item label="Emergency Contact">
-                            <Input placeholder="Emergency Contact" />
+                        <Col span={3}>
+                          <Form.Item label="Weight" style={{ marginBottom: 8 }}>
+                            <Input size="small" />
                           </Form.Item>
                         </Col>
                       </Row>
-                      <Row gutter={16}>
-                        <Col span={12}>
-                          <Form.Item label="Address">
-                            <Input.TextArea
-                              rows={2}
-                              placeholder="Patient Address"
-                            />
+                      <Row gutter={8}>
+                        <Col span={4}>
+                          <Form.Item
+                            label="Patient ID"
+                            style={{ marginBottom: 8 }}
+                          >
+                            <Input size="small" />
                           </Form.Item>
                         </Col>
-                        <Col span={6}>
-                          <Form.Item label="Insurance Provider">
-                            <Input placeholder="Insurance" />
+                        <Col span={4}>
+                          <Form.Item label="MRN" style={{ marginBottom: 8 }}>
+                            <Input size="small" />
                           </Form.Item>
                         </Col>
-                        <Col span={6}>
-                          <Form.Item label="Policy Number">
-                            <Input placeholder="Policy #" />
+                        <Col span={4}>
+                          <Form.Item
+                            label="Accession No."
+                            style={{ marginBottom: 8 }}
+                          >
+                            <Input size="small" />
+                          </Form.Item>
+                        </Col>
+                        <Col span={4}>
+                          <Form.Item
+                            label="Study ID"
+                            style={{ marginBottom: 8 }}
+                          >
+                            <Input size="small" />
+                          </Form.Item>
+                        </Col>
+                        <Col span={4}>
+                          <Form.Item
+                            label="Visit ID"
+                            style={{ marginBottom: 8 }}
+                          >
+                            <Input size="small" />
+                          </Form.Item>
+                        </Col>
+                        <Col span={4}>
+                          <Form.Item label="Height" style={{ marginBottom: 8 }}>
+                            <Input size="small" />
                           </Form.Item>
                         </Col>
                       </Row>
