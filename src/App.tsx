@@ -182,17 +182,40 @@ const App: React.FC = () => {
               <div className="patients-section">
                 <div className="section-header">
                   <Text strong>Patients</Text>
-                  <Text type="secondary">
-                    Scheduled Today - Research 8:30 PM
-                  </Text>
+                  <Text type="secondary">{getFilterStatus()}</Text>
+                </div>
+
+                {/* Patient Filters */}
+                <div className="patient-filters">
+                  <Input
+                    placeholder="Filter by Patient"
+                    value={patientFilter}
+                    onChange={(e) => setPatientFilter(e.target.value)}
+                    size="small"
+                    style={{ marginBottom: 4 }}
+                  />
+                  <Input
+                    placeholder="Filter by Procedure"
+                    value={procedureFilter}
+                    onChange={(e) => setProcedureFilter(e.target.value)}
+                    size="small"
+                    style={{ marginBottom: 4 }}
+                  />
+                  <Input
+                    placeholder="Filter by Date & Time"
+                    value={dateTimeFilter}
+                    onChange={(e) => setDateTimeFilter(e.target.value)}
+                    size="small"
+                    style={{ marginBottom: 8 }}
+                  />
                 </div>
 
                 <Table
                   columns={patientColumns}
-                  dataSource={patientData}
+                  dataSource={filteredPatients}
                   pagination={false}
                   size="small"
-                  showHeader={false}
+                  showHeader={true}
                   className="patients-table"
                 />
               </div>
