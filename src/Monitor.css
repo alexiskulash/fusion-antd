@@ -427,27 +427,50 @@
 }
 
 .search-section .ant-input {
-  background: #ffffff;
-  border: 1px solid #d9d9d9;
-  color: rgba(0, 0, 0, 0.85);
+  background: #5a6c7d !important;
+  border: 1px solid #4a5568 !important;
+  color: #ffffff !important;
 }
 
 .search-section .ant-input::placeholder {
-  color: rgba(0, 0, 0, 0.45);
+  color: #cccccc !important;
 }
 
 .search-section .ant-picker {
-  background: #ffffff;
-  border: 1px solid #d9d9d9;
+  background: #5a6c7d !important;
+  border: 1px solid #4a5568 !important;
 }
 
 .search-section .ant-picker .ant-picker-input input {
-  background: transparent;
-  color: rgba(0, 0, 0, 0.85);
+  background: transparent !important;
+  color: #ffffff !important;
 }
 
 .search-section .ant-picker .ant-picker-input input::placeholder {
-  color: rgba(0, 0, 0, 0.45);
+  color: #cccccc !important;
+}
+
+/* Patient Record specific input styling */
+.patient-record-card .ant-input {
+  background: #5a6c7d !important;
+  border: 1px solid #4a5568 !important;
+  color: #ffffff !important;
+}
+
+.patient-record-card .ant-input::placeholder {
+  color: #cccccc !important;
+}
+
+.patient-record-card .ant-btn {
+  background: #5a6c7d !important;
+  border: 1px solid #4a5568 !important;
+  color: #ffffff !important;
+}
+
+.patient-record-card .ant-btn:hover {
+  background: #6b7a8a !important;
+  border-color: #5a6c7d !important;
+  color: #ffffff !important;
 }
 
 /* Responsive adjustments */
