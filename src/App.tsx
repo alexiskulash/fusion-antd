@@ -91,7 +91,7 @@ const App: React.FC = () => {
         <Header className="scheduler-header">
           <div className="header-content">
             <Title level={4} style={{ color: "#ffffff", margin: 0 }}>
-              <MedicalBoxOutlined style={{ marginRight: 8 }} />
+              <MedicineBoxOutlined style={{ marginRight: 8 }} />
               Scheduler
             </Title>
             <Space style={{ marginLeft: "auto" }}>
