@@ -122,7 +122,9 @@ const Monitor: React.FC = () => {
                       />
                     </Col>
                     <Col span={6}>
-                      <Button size="small">Search Data</Button>
+                      <Button size="small" type="primary">
+                        Search Data
+                      </Button>
                     </Col>
                   </Row>
                 </div>
