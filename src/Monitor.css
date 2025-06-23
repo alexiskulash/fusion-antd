@@ -1,15 +1,15 @@
-/* Monitor Page Styles */
+/* Monitor Page Styles - Using Ant Design Standards */
 
 .monitor-layout {
   min-height: 100vh;
-  background: #e6f3ff;
+  background: #f0f2f5;
 }
 
 .monitor-header {
-  background: #1f3a5f;
+  background: #001529;
   padding: 0;
   height: 64px;
-  border-bottom: 1px solid #2c5aa0;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .header-content {
@@ -25,9 +25,9 @@
 }
 
 .header-tabs .ant-tabs-tab {
-  color: #cccccc;
-  background: #34495e;
-  border: 1px solid #4a6cf7;
+  color: rgba(255, 255, 255, 0.65);
+  background: #002140;
+  border: 1px solid #096dd9;
   margin-right: 4px;
   border-radius: 4px 4px 0 0;
 }
@@ -52,7 +52,7 @@
 }
 
 .monitor-content {
-  background: #e6f3ff;
+  background: #f0f2f5;
   padding: 16px;
   height: calc(100vh - 64px);
 }
@@ -88,12 +88,14 @@
   font-weight: 600;
   font-size: 12px;
   padding: 8px;
+  color: rgba(0, 0, 0, 0.85);
 }
 
 .patient-record-table .ant-table-tbody > tr > td {
   padding: 4px 8px;
   font-size: 12px;
   border-bottom: 1px solid #f0f0f0;
+  color: rgba(0, 0, 0, 0.85);
 }
 
 .patient-record-table .ant-table-tbody > tr:hover {
@@ -107,9 +109,9 @@
 }
 
 .info-section-card .ant-card-head {
-  background: #2c5aa0;
+  background: #1890ff;
   color: #ffffff;
-  border-bottom: 1px solid #4a6cf7;
+  border-bottom: 1px solid #d9d9d9;
   padding: 8px 16px;
 }
 
@@ -121,8 +123,8 @@
 
 .info-section-card .ant-card-body {
   padding: 12px;
-  background: #4f80c7;
-  color: #ffffff;
+  background: #ffffff;
+  color: rgba(0, 0, 0, 0.85);
 }
 
 .info-section-card .ant-form-item {
@@ -130,44 +132,44 @@
 }
 
 .info-section-card .ant-form-item-label > label {
-  color: #ffffff;
+  color: rgba(0, 0, 0, 0.85);
   font-size: 11px;
 }
 
 .info-section-card .ant-input,
 .info-section-card .ant-select-selector {
-  background: #6bb3ff !important;
-  border: 1px solid #87ceeb !important;
-  color: #ffffff !important;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  color: rgba(0, 0, 0, 0.85);
   font-size: 11px;
   height: 24px;
 }
 
 .info-section-card .ant-input::placeholder {
-  color: #cccccc !important;
+  color: rgba(0, 0, 0, 0.25);
 }
 
 .info-section-card .ant-select-selector .ant-select-selection-search-input {
-  color: #ffffff !important;
+  color: rgba(0, 0, 0, 0.85);
 }
 
 .info-section-card .ant-picker {
-  background: #6bb3ff !important;
-  border: 1px solid #87ceeb !important;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
 }
 
 .info-section-card .ant-picker .ant-picker-input input {
-  background: transparent !important;
-  color: #ffffff !important;
+  background: transparent;
+  color: rgba(0, 0, 0, 0.85);
 }
 
 .other-info-content {
-  color: #ffffff;
+  color: rgba(0, 0, 0, 0.85);
   font-size: 11px;
 }
 
 .other-info-content .ant-typography {
-  color: #cccccc;
+  color: rgba(0, 0, 0, 0.45);
   font-size: 10px;
   line-height: 1.4;
 }
@@ -179,27 +181,27 @@
 }
 
 .status-card {
-  background: #2c5aa0;
-  color: #ffffff;
-  border: 1px solid #4a6cf7;
+  background: #e6f7ff;
+  color: rgba(0, 0, 0, 0.85);
+  border: 1px solid #91d5ff;
 }
 
 .status-card .ant-card-body {
-  background: #2c5aa0;
-  color: #ffffff;
+  background: #e6f7ff;
+  color: rgba(0, 0, 0, 0.85);
   padding: 12px;
 }
 
 .call-body-card {
-  background: #2c5aa0;
-  color: #ffffff;
-  border: 1px solid #4a6cf7;
+  background: #ffffff;
+  color: rgba(0, 0, 0, 0.85);
+  border: 1px solid #d9d9d9;
 }
 
 .call-body-card .ant-card-head {
-  background: #1f3a5f;
+  background: #1890ff;
   color: #ffffff;
-  border-bottom: 1px solid #4a6cf7;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .call-body-card .ant-card-head-title {
@@ -208,8 +210,8 @@
 }
 
 .call-body-card .ant-card-body {
-  background: #4f80c7;
-  color: #ffffff;
+  background: #ffffff;
+  color: rgba(0, 0, 0, 0.85);
   padding: 16px;
 }
 
@@ -218,23 +220,24 @@
 }
 
 .pulse-display {
-  background: #4a6cf7;
-  border: 2px solid #6bb3ff;
+  background: #f0f0f0;
+  border: 2px solid #d9d9d9;
   border-radius: 8px;
   padding: 16px;
   margin: 8px 0;
+  color: rgba(0, 0, 0, 0.85);
 }
 
 .table-card {
-  background: #2c5aa0;
-  color: #ffffff;
-  border: 1px solid #4a6cf7;
+  background: #ffffff;
+  color: rgba(0, 0, 0, 0.85);
+  border: 1px solid #d9d9d9;
 }
 
 .table-card .ant-card-head {
-  background: #1f3a5f;
+  background: #1890ff;
   color: #ffffff;
-  border-bottom: 1px solid #4a6cf7;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .table-card .ant-card-head-title {
@@ -243,37 +246,39 @@
 }
 
 .table-card .ant-card-body {
-  background: #4f80c7;
-  color: #ffffff;
+  background: #ffffff;
+  color: rgba(0, 0, 0, 0.85);
   padding: 16px;
   text-align: center;
 }
 
 .table-content {
-  background: #4a6cf7;
-  border: 2px solid #6bb3ff;
+  background: #f0f0f0;
+  border: 2px solid #d9d9d9;
   border-radius: 8px;
   padding: 16px;
   margin: 8px 0;
+  color: rgba(0, 0, 0, 0.85);
 }
 
 .controls-card {
-  background: #2c5aa0;
-  color: #ffffff;
-  border: 1px solid #4a6cf7;
+  background: #ffffff;
+  color: rgba(0, 0, 0, 0.85);
+  border: 1px solid #d9d9d9;
   flex: 1;
 }
 
 .controls-card .ant-card-body {
-  background: #2c5aa0;
-  color: #ffffff;
+  background: #ffffff;
+  color: rgba(0, 0, 0, 0.85);
   padding: 16px;
 }
 
 .sar-display {
-  background: #4f80c7;
+  background: #fafafa;
   padding: 12px;
   border-radius: 4px;
+  border: 1px solid #d9d9d9;
 }
 
 .sar-display .ant-table {
@@ -281,19 +286,49 @@
 }
 
 .sar-display .ant-table-thead > tr > th {
-  background: #2c5aa0;
-  color: #ffffff;
-  border-bottom: 1px solid #4a6cf7;
+  background: #fafafa;
+  color: rgba(0, 0, 0, 0.85);
+  border-bottom: 1px solid #d9d9d9;
   font-size: 10px;
   padding: 4px;
 }
 
 .sar-display .ant-table-tbody > tr > td {
-  background: #4f80c7;
-  color: #ffffff;
-  border-bottom: 1px solid #4a6cf7;
+  background: #ffffff;
+  color: rgba(0, 0, 0, 0.85);
+  border-bottom: 1px solid #f0f0f0;
   font-size: 10px;
   padding: 4px;
+}
+
+/* Search section styling */
+.search-section .ant-input,
+.search-section .ant-btn {
+  height: 28px;
+}
+
+.search-section .ant-input {
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.search-section .ant-input::placeholder {
+  color: rgba(0, 0, 0, 0.25);
+}
+
+.search-section .ant-picker {
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+}
+
+.search-section .ant-picker .ant-picker-input input {
+  background: transparent;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.search-section .ant-picker .ant-picker-input input::placeholder {
+  color: rgba(0, 0, 0, 0.25);
 }
 
 /* Responsive adjustments */
@@ -341,35 +376,6 @@
   line-height: 1.2;
 }
 
-.search-section .ant-input,
-.search-section .ant-btn {
-  height: 28px;
-}
-
-.search-section .ant-input {
-  background: #4a6cf7 !important;
-  border: 1px solid #6bb3ff !important;
-  color: #ffffff !important;
-}
-
-.search-section .ant-input::placeholder {
-  color: #cccccc !important;
-}
-
-.search-section .ant-picker {
-  background: #4a6cf7 !important;
-  border: 1px solid #6bb3ff !important;
-}
-
-.search-section .ant-picker .ant-picker-input input {
-  background: transparent !important;
-  color: #ffffff !important;
-}
-
-.search-section .ant-picker .ant-picker-input input::placeholder {
-  color: #cccccc !important;
-}
-
 /* Tab customizations */
 .ant-tabs-tab {
   padding: 8px 12px;
@@ -394,84 +400,81 @@
   font-size: 12px;
 }
 
-/* Override any remaining dark backgrounds with blue */
-.monitor-layout .ant-input {
-  background: #4a6cf7 !important;
-  border: 1px solid #6bb3ff !important;
-  color: #ffffff !important;
+/* Remove all custom color overrides - use default Ant Design styling */
+.monitor-layout .ant-input,
+.monitor-layout .ant-picker,
+.monitor-layout .ant-select-selector {
+  /* Reset to use default Ant Design styling */
+  background: #ffffff !important;
+  border: 1px solid #d9d9d9 !important;
+  color: rgba(0, 0, 0, 0.85) !important;
 }
 
 .monitor-layout .ant-input::placeholder {
-  color: #cccccc !important;
-}
-
-.monitor-layout .ant-picker {
-  background: #4a6cf7 !important;
-  border: 1px solid #6bb3ff !important;
+  color: rgba(0, 0, 0, 0.25) !important;
 }
 
 .monitor-layout .ant-picker .ant-picker-input input {
   background: transparent !important;
-  color: #ffffff !important;
-}
-
-.monitor-layout .ant-select-selector {
-  background: #4a6cf7 !important;
-  border: 1px solid #6bb3ff !important;
-  color: #ffffff !important;
+  color: rgba(0, 0, 0, 0.85) !important;
 }
 
 .monitor-layout .ant-select-arrow {
-  color: #ffffff !important;
+  color: rgba(0, 0, 0, 0.25) !important;
 }
 
-/* Dropdown menu styling */
+/* Standard Ant Design dropdown styling */
 .ant-select-dropdown {
-  background: #2c5aa0 !important;
-  border: 1px solid #4a6cf7 !important;
+  background: #ffffff !important;
+  border: 1px solid #d9d9d9 !important;
+  box-shadow:
+    0 3px 6px -4px rgba(0, 0, 0, 0.12),
+    0 6px 16px 0 rgba(0, 0, 0, 0.08),
+    0 9px 28px 8px rgba(0, 0, 0, 0.05);
 }
 
 .ant-select-item {
-  background: #2c5aa0 !important;
-  color: #ffffff !important;
+  background: #ffffff !important;
+  color: rgba(0, 0, 0, 0.85) !important;
 }
 
 .ant-select-item:hover {
-  background: #4a6cf7 !important;
+  background: #f5f5f5 !important;
 }
 
 .ant-select-item-option-selected {
-  background: #1890ff !important;
-  color: #ffffff !important;
+  background: #e6f7ff !important;
+  color: #1890ff !important;
 }
 
-/* DatePicker dropdown */
+/* Standard DatePicker dropdown styling */
 .ant-picker-dropdown {
-  background: #2c5aa0 !important;
+  background: #ffffff !important;
 }
 
 .ant-picker-panel {
-  background: #2c5aa0 !important;
-  border: 1px solid #4a6cf7 !important;
+  background: #ffffff !important;
+  border: 1px solid #d9d9d9 !important;
 }
 
 .ant-picker-header {
-  background: #1f3a5f !important;
-  border-bottom: 1px solid #4a6cf7 !important;
+  background: #fafafa !important;
+  border-bottom: 1px solid #d9d9d9 !important;
 }
 
 .ant-picker-body {
-  background: #2c5aa0 !important;
+  background: #ffffff !important;
 }
 
 .ant-picker-cell {
-  color: #ffffff !important;
+  color: rgba(0, 0, 0, 0.85) !important;
 }
 
 .ant-picker-cell:hover .ant-picker-cell-inner {
-  background: #4a6cf7 !important;
+  background: #f5f5f5 !important;
 }
 
 .ant-picker-cell-selected .ant-picker-cell-inner {
   background: #1890ff !important;
+  color: #ffffff !important;
 }
