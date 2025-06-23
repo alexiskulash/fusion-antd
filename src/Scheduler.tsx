@@ -571,35 +571,61 @@ const Scheduler: React.FC = () => {
             <div
               className="notification-bar"
               style={{
-                marginTop: 8,
-                padding: "4px 12px",
-                background: "#1a1a1a",
-                borderRadius: "4px",
+                marginTop: 6,
+                padding: "6px 16px",
+                background: "#2d2d2d",
+                borderRadius: "2px",
                 border: "1px solid #444444",
               }}
             >
               <Row justify="space-between" align="middle">
                 <Col>
-                  <Text style={{ color: "#cccccc", fontSize: "11px" }}>
+                  <Text style={{ color: "#cccccc", fontSize: "12px" }}>
                     Safety relevant information needs to be validated and
                     confirmed ⚬ Mandatory information
                   </Text>
                 </Col>
                 <Col>
-                  <Space size="large">
-                    <Button icon={<SaveOutlined />} size="small">
+                  <Space size="small">
+                    <Button
+                      size="small"
+                      style={{ minWidth: "60px", fontSize: "11px" }}
+                    >
                       Save
                     </Button>
-                    <Button icon={<UndoOutlined />} size="small">
+                    <Button
+                      size="small"
+                      style={{ minWidth: "60px", fontSize: "11px" }}
+                    >
                       Cancel
                     </Button>
-                    <Button size="small">Delete</Button>
-                    <Button size="small">Live Data</Button>
-                    <Button size="small">Prep Studies</Button>
+                    <Button
+                      size="small"
+                      style={{ minWidth: "60px", fontSize: "11px" }}
+                    >
+                      Delete
+                    </Button>
+                    <Button
+                      size="small"
+                      style={{ minWidth: "80px", fontSize: "11px" }}
+                    >
+                      Live Data
+                    </Button>
+                    <Button
+                      size="small"
+                      style={{ minWidth: "90px", fontSize: "11px" }}
+                    >
+                      Prep Studies
+                    </Button>
                     <Button
                       type="primary"
                       size="small"
-                      style={{ background: "#ff6b35", borderColor: "#ff6b35" }}
+                      style={{
+                        background: "#ff6b35",
+                        borderColor: "#ff6b35",
+                        minWidth: "60px",
+                        fontSize: "11px",
+                      }}
                     >
                       Event
                     </Button>
