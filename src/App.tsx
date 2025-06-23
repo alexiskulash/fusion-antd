@@ -163,7 +163,7 @@ const App: React.FC = () => {
         </Header>
 
         <Layout>
-          <Sider width={260} className="scheduler-sider">
+          <Sider width={400} className="scheduler-sider">
             <div className="sider-content">
               <div className="search-section">
                 <Input
