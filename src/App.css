@@ -364,3 +364,90 @@
 .ant-form-item-has-error .ant-select-selector {
   border-color: #ff4d4f !important;
 }
+
+/* Form field styling to match original */
+.form-field {
+  margin-bottom: 8px;
+}
+
+.form-field label {
+  display: block;
+  color: #cccccc;
+  font-size: 11px;
+  margin-bottom: 2px;
+  font-weight: normal;
+}
+
+.form-field .ant-input,
+.form-field .ant-select,
+.form-field .ant-picker {
+  background: #3d3d3d;
+  border: 1px solid #555555;
+  color: #ffffff;
+  font-size: 11px;
+  height: 24px;
+}
+
+.form-field .ant-input::placeholder {
+  color: #888888;
+}
+
+.form-field .ant-select-selector {
+  background: #3d3d3d !important;
+  border: 1px solid #555555 !important;
+  color: #ffffff !important;
+  height: 24px !important;
+}
+
+.form-field .ant-select-selection-item {
+  color: #ffffff !important;
+  font-size: 11px !important;
+}
+
+.form-field .ant-picker {
+  background: #3d3d3d !important;
+  border: 1px solid #555555 !important;
+}
+
+.form-field .ant-picker .ant-picker-input input {
+  background: transparent !important;
+  color: #ffffff !important;
+  font-size: 11px !important;
+}
+
+/* Compact card styling */
+.info-card.ant-card-small .ant-card-head {
+  min-height: 32px;
+  padding: 0 12px;
+}
+
+.info-card.ant-card-small .ant-card-head-title {
+  font-size: 12px;
+  line-height: 32px;
+}
+
+.info-card.ant-card-small .ant-card-body {
+  padding: 8px 12px;
+}
+
+/* Remove default form item margins for compact layout */
+.content-wrapper .ant-form-item {
+  margin-bottom: 0;
+}
+
+.content-wrapper .ant-form-item-label {
+  padding-bottom: 0;
+}
+
+/* Checkbox group styling */
+.checkbox-group {
+  margin-top: 8px;
+}
+
+.checkbox-group div {
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  font-size: 12px;
+}
