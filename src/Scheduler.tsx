@@ -209,264 +209,336 @@ const Scheduler: React.FC = () => {
 
         <Content className="main-content">
           <div className="content-wrapper">
-            {/* Patient Registration Section */}
-            <Row gutter={[16, 16]} style={{ marginBottom: 16 }}>
-              <Col span={24}>
+            {/* Patient Registration Section - Full Width */}
+            <Card
+              title="vidOps"
+              className="info-card patient-registration-card"
+              style={{ marginBottom: 16 }}
+            >
+              <Form layout="horizontal" size="small">
+                <Row gutter={[16, 8]}>
+                  <Col span={6}>
+                    <Form.Item
+                      label="Last Name"
+                      labelCol={{ span: 8 }}
+                      wrapperCol={{ span: 16 }}
+                    >
+                      <Input size="small" />
+                    </Form.Item>
+                  </Col>
+                  <Col span={6}>
+                    <Form.Item
+                      label="First Name"
+                      labelCol={{ span: 8 }}
+                      wrapperCol={{ span: 16 }}
+                    >
+                      <Input size="small" />
+                    </Form.Item>
+                  </Col>
+                  <Col span={6}>
+                    <Form.Item
+                      label="Middle Name"
+                      labelCol={{ span: 8 }}
+                      wrapperCol={{ span: 16 }}
+                    >
+                      <Input size="small" />
+                    </Form.Item>
+                  </Col>
+                  <Col span={6}>
+                    <Form.Item
+                      label="DOB"
+                      labelCol={{ span: 6 }}
+                      wrapperCol={{ span: 18 }}
+                    >
+                      <DatePicker size="small" style={{ width: "100%" }} />
+                    </Form.Item>
+                  </Col>
+                </Row>
+                <Row gutter={[16, 8]}>
+                  <Col span={6}>
+                    <Form.Item
+                      label="Patient ID"
+                      labelCol={{ span: 8 }}
+                      wrapperCol={{ span: 16 }}
+                    >
+                      <Input size="small" />
+                    </Form.Item>
+                  </Col>
+                  <Col span={6}>
+                    <Form.Item
+                      label="MRN"
+                      labelCol={{ span: 8 }}
+                      wrapperCol={{ span: 16 }}
+                    >
+                      <Input size="small" />
+                    </Form.Item>
+                  </Col>
+                  <Col span={6}>
+                    <Form.Item
+                      label="Accession No."
+                      labelCol={{ span: 8 }}
+                      wrapperCol={{ span: 16 }}
+                    >
+                      <Input size="small" />
+                    </Form.Item>
+                  </Col>
+                  <Col span={6}>
+                    <Form.Item
+                      label="Study ID"
+                      labelCol={{ span: 6 }}
+                      wrapperCol={{ span: 18 }}
+                    >
+                      <Input size="small" />
+                    </Form.Item>
+                  </Col>
+                </Row>
+                <Row gutter={[16, 8]}>
+                  <Col span={6}>
+                    <Form.Item
+                      label="Visit ID"
+                      labelCol={{ span: 8 }}
+                      wrapperCol={{ span: 16 }}
+                    >
+                      <Input size="small" />
+                    </Form.Item>
+                  </Col>
+                  <Col span={6}>
+                    <Form.Item
+                      label="Age"
+                      labelCol={{ span: 8 }}
+                      wrapperCol={{ span: 16 }}
+                    >
+                      <Input size="small" />
+                    </Form.Item>
+                  </Col>
+                  <Col span={6}>
+                    <Form.Item
+                      label="Gender"
+                      labelCol={{ span: 8 }}
+                      wrapperCol={{ span: 16 }}
+                    >
+                      <Select size="small" style={{ width: "100%" }}>
+                        <Option value="M">M</Option>
+                        <Option value="F">F</Option>
+                      </Select>
+                    </Form.Item>
+                  </Col>
+                  <Col span={6}>
+                    <Form.Item
+                      label="Weight/Height"
+                      labelCol={{ span: 6 }}
+                      wrapperCol={{ span: 18 }}
+                    >
+                      <Input size="small" />
+                    </Form.Item>
+                  </Col>
+                </Row>
+              </Form>
+            </Card>
+
+            {/* Main Content Grid */}
+            <Row gutter={16}>
+              {/* Left Column */}
+              <Col span={12}>
+                {/* Medical Information */}
                 <Card
-                  title="vidOps"
-                  className="info-card patient-registration-card"
+                  title="Medical Information"
+                  className="info-card"
+                  style={{ marginBottom: 16 }}
                 >
                   <Form layout="vertical" size="small">
-                    <Row gutter={8}>
-                      <Col span={4}>
-                        <Form.Item
-                          label="Last Name"
-                          style={{ marginBottom: 8 }}
-                        >
-                          <Input size="small" />
-                        </Form.Item>
-                      </Col>
-                      <Col span={4}>
-                        <Form.Item
-                          label="First Name"
-                          style={{ marginBottom: 8 }}
-                        >
-                          <Input size="small" />
-                        </Form.Item>
-                      </Col>
-                      <Col span={4}>
-                        <Form.Item
-                          label="Middle Name"
-                          style={{ marginBottom: 8 }}
-                        >
-                          <Input size="small" />
-                        </Form.Item>
-                      </Col>
-                      <Col span={4}>
-                        <Form.Item label="DOB" style={{ marginBottom: 8 }}>
-                          <DatePicker size="small" style={{ width: "100%" }} />
-                        </Form.Item>
-                      </Col>
-                      <Col span={4}>
-                        <Form.Item label="Age" style={{ marginBottom: 8 }}>
-                          <Input size="small" />
-                        </Form.Item>
-                      </Col>
-                      <Col span={4}>
-                        <Form.Item label="Gender" style={{ marginBottom: 8 }}>
-                          <Select size="small" style={{ width: "100%" }}>
-                            <Option value="M">M</Option>
-                            <Option value="F">F</Option>
-                          </Select>
-                        </Form.Item>
-                      </Col>
-                    </Row>
-                    <Row gutter={8}>
-                      <Col span={4}>
-                        <Form.Item
-                          label="Patient ID"
-                          style={{ marginBottom: 8 }}
-                        >
-                          <Input size="small" />
-                        </Form.Item>
-                      </Col>
-                      <Col span={4}>
-                        <Form.Item label="MRN" style={{ marginBottom: 8 }}>
-                          <Input size="small" />
-                        </Form.Item>
-                      </Col>
-                      <Col span={4}>
-                        <Form.Item
-                          label="Accession No."
-                          style={{ marginBottom: 8 }}
-                        >
-                          <Input size="small" />
-                        </Form.Item>
-                      </Col>
-                      <Col span={4}>
-                        <Form.Item label="Study ID" style={{ marginBottom: 8 }}>
-                          <Input size="small" />
-                        </Form.Item>
-                      </Col>
-                      <Col span={4}>
-                        <Form.Item label="Visit ID" style={{ marginBottom: 8 }}>
-                          <Input size="small" />
-                        </Form.Item>
-                      </Col>
-                      <Col span={4}>
-                        <Form.Item
-                          label="Weight/Height"
-                          style={{ marginBottom: 8 }}
-                        >
-                          <Input size="small" />
-                        </Form.Item>
-                      </Col>
-                    </Row>
+                    <Form.Item
+                      label="Admitting Diagnosis"
+                      style={{ marginBottom: 12 }}
+                    >
+                      <Select placeholder="Select diagnosis" size="small">
+                        <Option value="dx1">Diagnosis 1</Option>
+                        <Option value="dx2">Diagnosis 2</Option>
+                      </Select>
+                    </Form.Item>
+                    <Form.Item
+                      label="Other Diagnosis"
+                      style={{ marginBottom: 0 }}
+                    >
+                      <Select placeholder="Select other" size="small">
+                        <Option value="other1">Other 1</Option>
+                      </Select>
+                    </Form.Item>
                   </Form>
                 </Card>
-              </Col>
-            </Row>
 
-            <Row gutter={[16, 16]}>
-              {/* Medical Information Section */}
-              <Col xs={24} md={12}>
-                <Card title="Medical Information" className="info-card">
-                  <Form form={form} layout="vertical" size="small">
-                    <Row gutter={16}>
-                      <Col span={12}>
-                        <Form.Item label="Admitting Diagnosis">
-                          <Select placeholder="Select diagnosis">
-                            <Option value="dx1">Diagnosis 1</Option>
-                            <Option value="dx2">Diagnosis 2</Option>
-                          </Select>
-                        </Form.Item>
-                      </Col>
-                      <Col span={12}>
-                        <Form.Item label="Other Diagnosis">
-                          <Select placeholder="Select other">
-                            <Option value="other1">Other 1</Option>
-                          </Select>
-                        </Form.Item>
-                      </Col>
-                    </Row>
-                  </Form>
-                </Card>
-              </Col>
-
-              {/* Examination Information Section */}
-              <Col xs={24} md={12}>
-                <Card title="Examination Information" className="info-card">
-                  <Form layout="vertical" size="small">
-                    <Row gutter={16}>
-                      <Col span={12}>
-                        <Form.Item label="Exam Technique">
-                          <Select placeholder="Select technique">
-                            <Option value="tech1">Technique 1</Option>
-                          </Select>
-                        </Form.Item>
-                      </Col>
-                      <Col span={12}>
-                        <Form.Item label="Scan Description">
-                          <Input placeholder="Enter description" />
-                        </Form.Item>
-                      </Col>
-                    </Row>
-                    <Row gutter={16}>
-                      <Col span={12}>
-                        <Form.Item label="Study Comments">
-                          <Input.TextArea
-                            rows={2}
-                            placeholder="Enter comments"
-                          />
-                        </Form.Item>
-                      </Col>
-                      <Col span={12}>
-                        <div className="checkbox-group">
-                          <div>
-                            <Switch size="small" /> SEE I/O Channel
-                          </div>
-                          <div>
-                            <Switch size="small" /> Body Coil/MRS
-                          </div>
-                        </div>
-                      </Col>
-                    </Row>
-                  </Form>
-                </Card>
-              </Col>
-
-              {/* Alerts Section */}
-              <Col xs={24} md={8}>
-                <Card title="Alerts" className="info-card alerts-card">
-                  <div className="alert-item">
-                    <Text type="secondary">Medical Alert:</Text>
-                    <div className="alert-content">No alerts</div>
+                {/* Alerts */}
+                <Card
+                  title="Alerts"
+                  className="info-card"
+                  style={{ marginBottom: 16 }}
+                >
+                  <div style={{ marginBottom: 8 }}>
+                    <Text style={{ color: "#cccccc", fontSize: "12px" }}>
+                      Medical Alert:
+                    </Text>
+                    <div style={{ color: "#888888", fontSize: "11px" }}>
+                      No alerts
+                    </div>
                   </div>
-                  <div className="alert-item">
-                    <Text type="secondary">Allergies:</Text>
-                    <div className="alert-content">No allergies</div>
+                  <div>
+                    <Text style={{ color: "#cccccc", fontSize: "12px" }}>
+                      Allergies:
+                    </Text>
+                    <div style={{ color: "#888888", fontSize: "11px" }}>
+                      No allergies
+                    </div>
                   </div>
                 </Card>
-              </Col>
 
-              {/* Institution Section */}
-              <Col xs={24} md={16}>
+                {/* Institution */}
                 <Card title="Institution" className="info-card">
                   <Form layout="vertical" size="small">
-                    <Row gutter={16}>
-                      <Col span={8}>
-                        <Form.Item label="Performing Physician">
-                          <Select defaultValue="SIEMENS Psychiatry - Physician 1">
-                            <Option value="physician1">
-                              SIEMENS Psychiatry - Physician 1
-                            </Option>
-                          </Select>
-                        </Form.Item>
-                      </Col>
-                      <Col span={8}>
-                        <Form.Item label="Referring Physician">
-                          <Select placeholder="Select physician">
-                            <Option value="ref1">Referring Physician 1</Option>
-                          </Select>
-                        </Form.Item>
-                      </Col>
-                      <Col span={8}>
-                        <Form.Item label="Requesting Physician">
-                          <Select placeholder="Select physician">
-                            <Option value="req1">Requesting Physician 1</Option>
-                          </Select>
-                        </Form.Item>
-                      </Col>
-                    </Row>
+                    <Form.Item
+                      label="Performing Physician"
+                      style={{ marginBottom: 12 }}
+                    >
+                      <Select
+                        defaultValue="SIEMENS Psychiatry - Physician 1"
+                        size="small"
+                      >
+                        <Option value="physician1">
+                          SIEMENS Psychiatry - Physician 1
+                        </Option>
+                      </Select>
+                    </Form.Item>
+                    <Form.Item
+                      label="Referring Physician"
+                      style={{ marginBottom: 12 }}
+                    >
+                      <Select placeholder="Select physician" size="small">
+                        <Option value="ref1">Referring Physician 1</Option>
+                      </Select>
+                    </Form.Item>
+                    <Form.Item
+                      label="Requesting Physician"
+                      style={{ marginBottom: 0 }}
+                    >
+                      <Select placeholder="Select physician" size="small">
+                        <Option value="req1">Requesting Physician 1</Option>
+                      </Select>
+                    </Form.Item>
                   </Form>
                 </Card>
               </Col>
 
-              {/* Program Selection */}
-              <Col xs={24} md={12}>
-                <Card title="Program Selection" className="info-card">
+              {/* Right Column */}
+              <Col span={12}>
+                {/* Examination Information */}
+                <Card
+                  title="Examination Information"
+                  className="info-card"
+                  style={{ marginBottom: 16 }}
+                >
+                  <Form layout="vertical" size="small">
+                    <Form.Item
+                      label="Exam Technique"
+                      style={{ marginBottom: 12 }}
+                    >
+                      <Select placeholder="Select technique" size="small">
+                        <Option value="tech1">Technique 1</Option>
+                      </Select>
+                    </Form.Item>
+                    <Form.Item
+                      label="Scan Description"
+                      style={{ marginBottom: 12 }}
+                    >
+                      <Input placeholder="Enter description" size="small" />
+                    </Form.Item>
+                    <Form.Item
+                      label="Study Comments"
+                      style={{ marginBottom: 12 }}
+                    >
+                      <Input.TextArea
+                        rows={2}
+                        placeholder="Enter comments"
+                        size="small"
+                      />
+                    </Form.Item>
+                    <div className="checkbox-group">
+                      <div style={{ marginBottom: 4 }}>
+                        <Switch size="small" />{" "}
+                        <span style={{ marginLeft: 8, fontSize: "12px" }}>
+                          SEE I/O Channel
+                        </span>
+                      </div>
+                      <div>
+                        <Switch size="small" />{" "}
+                        <span style={{ marginLeft: 8, fontSize: "12px" }}>
+                          Body Coil/MRS
+                        </span>
+                      </div>
+                    </div>
+                  </Form>
+                </Card>
+
+                {/* Program Selection */}
+                <Card
+                  title="Program Selection"
+                  className="info-card"
+                  style={{ marginBottom: 16 }}
+                >
                   <Select
                     defaultValue="CHILD > 18E > 22 Channel + Amy_Pilot_Subtle"
                     style={{ width: "100%" }}
+                    size="small"
                   >
                     <Option value="program1">
                       CHILD &gt; 18E &gt; 22 Channel + Amy_Pilot_Subtle
                     </Option>
                   </Select>
                   <div style={{ marginTop: 8 }}>
-                    <Text type="secondary">Fast Program to Queue</Text>
+                    <Text style={{ color: "#888888", fontSize: "11px" }}>
+                      Fast Program to Queue
+                    </Text>
                   </div>
                 </Card>
-              </Col>
 
-              {/* RP Transmit Mode */}
-              <Col xs={24} md={12}>
-                <Card title="RP Transmit Mode" className="info-card">
+                {/* RP Transmit Mode */}
+                <Card
+                  title="RP Transmit Mode"
+                  className="info-card"
+                  style={{ marginBottom: 16 }}
+                >
                   <Select
                     defaultValue="Any Preparation"
                     style={{ width: "100%" }}
+                    size="small"
                   >
                     <Option value="any">Any Preparation</Option>
                   </Select>
                 </Card>
-              </Col>
 
-              {/* Body Part and Laterality */}
-              <Col xs={24} md={12}>
-                <Card title="Body Part and Laterality" className="info-card">
+                {/* Body Part and Laterality */}
+                <Card
+                  title="Body Part and Laterality"
+                  className="info-card"
+                  style={{ marginBottom: 16 }}
+                >
                   <Form layout="vertical" size="small">
-                    <Row gutter={16}>
+                    <Row gutter={8}>
                       <Col span={12}>
-                        <Form.Item label="Body Part">
-                          <Select placeholder="Select body part">
+                        <Form.Item
+                          label="Body Part"
+                          style={{ marginBottom: 8 }}
+                        >
+                          <Select placeholder="Select body part" size="small">
                             <Option value="brain">Brain</Option>
                             <Option value="spine">Spine</Option>
                           </Select>
                         </Form.Item>
                       </Col>
                       <Col span={12}>
-                        <Form.Item label="Laterality">
-                          <Select placeholder="Select laterality">
+                        <Form.Item
+                          label="Laterality"
+                          style={{ marginBottom: 8 }}
+                        >
+                          <Select placeholder="Select laterality" size="small">
                             <Option value="left">Left</Option>
                             <Option value="right">Right</Option>
                             <Option value="bilateral">Bilateral</Option>
@@ -476,12 +548,10 @@ const Scheduler: React.FC = () => {
                     </Row>
                   </Form>
                 </Card>
-              </Col>
 
-              {/* Patient Orientation */}
-              <Col xs={24} md={12}>
+                {/* Patient Orientation */}
                 <Card title="Patient Orientation" className="info-card">
-                  <div className="orientation-selector">
+                  <div style={{ textAlign: "center" }}>
                     <Button type="primary" size="small">
                       Supine
                     </Button>
@@ -491,15 +561,19 @@ const Scheduler: React.FC = () => {
             </Row>
 
             {/* Action Buttons */}
-            <div className="action-buttons">
+            <div className="action-buttons" style={{ marginTop: 24 }}>
               <Space>
-                <Button icon={<SaveOutlined />}>Save</Button>
-                <Button icon={<UndoOutlined />}>Cancel</Button>
-                <Button type="primary" icon={<CheckOutlined />}>
+                <Button icon={<SaveOutlined />} size="small">
+                  Save
+                </Button>
+                <Button icon={<UndoOutlined />} size="small">
+                  Cancel
+                </Button>
+                <Button type="primary" icon={<CheckOutlined />} size="small">
                   Finish
                 </Button>
-                <Button>Live Data</Button>
-                <Button>Prep Registry</Button>
+                <Button size="small">Live Data</Button>
+                <Button size="small">Prep Registry</Button>
               </Space>
             </div>
           </div>
