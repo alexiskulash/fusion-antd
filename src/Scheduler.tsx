@@ -578,42 +578,66 @@ const Scheduler: React.FC = () => {
                 border: "1px solid #444444",
               }}
             >
-              <Row justify="space-between" align="middle">
-                <Col>
-                  <Text style={{ color: "#cccccc", fontSize: "12px" }}>
-                    Safety relevant information needs to be validated and
-                    confirmed ⚬ Mandatory information
-                  </Text>
-                </Col>
+              <Row justify="end" align="middle">
                 <Col>
                   <Space size="small">
                     <Button
                       size="small"
-                      style={{ minWidth: "60px", fontSize: "11px" }}
+                      style={{
+                        minWidth: "60px",
+                        fontSize: "11px",
+                        background: "#555555",
+                        borderColor: "#666666",
+                        color: "#ffffff",
+                      }}
                     >
                       Save
                     </Button>
                     <Button
                       size="small"
-                      style={{ minWidth: "60px", fontSize: "11px" }}
+                      style={{
+                        minWidth: "60px",
+                        fontSize: "11px",
+                        background: "#555555",
+                        borderColor: "#666666",
+                        color: "#ffffff",
+                      }}
                     >
                       Cancel
                     </Button>
                     <Button
                       size="small"
-                      style={{ minWidth: "60px", fontSize: "11px" }}
+                      style={{
+                        minWidth: "60px",
+                        fontSize: "11px",
+                        background: "#555555",
+                        borderColor: "#666666",
+                        color: "#ffffff",
+                      }}
                     >
                       Delete
                     </Button>
                     <Button
                       size="small"
-                      style={{ minWidth: "80px", fontSize: "11px" }}
+                      style={{
+                        minWidth: "80px",
+                        fontSize: "11px",
+                        background: "#555555",
+                        borderColor: "#666666",
+                        color: "#ffffff",
+                      }}
                     >
                       Live Data
                     </Button>
                     <Button
                       size="small"
-                      style={{ minWidth: "90px", fontSize: "11px" }}
+                      style={{
+                        minWidth: "90px",
+                        fontSize: "11px",
+                        background: "#555555",
+                        borderColor: "#666666",
+                        color: "#ffffff",
+                      }}
                     >
                       Prep Studies
                     </Button>
