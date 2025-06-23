@@ -265,6 +265,14 @@
   color: rgba(0, 0, 0, 0.85);
 }
 
+.pulse-display * {
+  color: rgba(0, 0, 0, 0.85) !important;
+}
+
+.pulse-display .ant-typography {
+  color: rgba(0, 0, 0, 0.85) !important;
+}
+
 .table-card {
   background: #ffffff;
   color: rgba(0, 0, 0, 0.85);
