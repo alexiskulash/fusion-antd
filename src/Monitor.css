@@ -44,6 +44,16 @@
   border-color: #1890ff !important;
 }
 
+.header-tabs .ant-tabs-tab-btn {
+  color: #ffffff !important;
+  text-shadow: none !important;
+}
+
+.header-tabs .ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #ffffff !important;
+  text-shadow: none !important;
+}
+
 .header-tabs .ant-tabs-content-holder {
   display: none;
 }
