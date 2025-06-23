@@ -182,7 +182,9 @@ const App: React.FC = () => {
               <div className="patients-section">
                 <div className="section-header">
                   <Text strong>Patients</Text>
-                  <Text type="secondary">{getFilterStatus()}</Text>
+                  <Text type="secondary" style={{ marginLeft: "16px" }}>
+                    {getFilterStatus()}
+                  </Text>
                 </div>
 
                 {/* Patient Filters */}
