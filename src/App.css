@@ -411,7 +411,59 @@
 
 /* Form field styling to match original */
 .form-field {
-  margin-bottom: 6px;
+  margin-bottom: 3px;
+}
+
+/* Ultra compact layout for Medical Information and Examination cards */
+.compact-card .form-field .ant-input,
+.compact-card .form-field .ant-select,
+.compact-card .form-field .ant-input-data-count {
+  height: 20px !important;
+  font-size: 10px !important;
+  padding: 2px 6px !important;
+}
+
+.compact-card .form-field .ant-select-selector {
+  height: 20px !important;
+  padding: 0 6px !important;
+}
+
+.compact-card .form-field .ant-select-selection-item {
+  line-height: 18px !important;
+  font-size: 10px !important;
+}
+
+.compact-card .form-field label {
+  font-size: 10px !important;
+  margin-bottom: 1px !important;
+  line-height: 1.2 !important;
+}
+
+/* Make textarea fields fill remaining space in cards */
+.compact-card .form-field .ant-input {
+  resize: none;
+}
+
+/* Specific styling for different sections */
+.compact-card:nth-child(1) {
+  flex: 0 0 80px;
+}
+
+.compact-card:nth-child(2) {
+  flex: 1;
+}
+
+.compact-card:nth-child(3) {
+  flex: 1;
+}
+
+/* Remove extra margins and padding everywhere */
+.content-wrapper .ant-row {
+  margin: 0 !important;
+}
+
+.content-wrapper .ant-col {
+  padding: 0 4px !important;
 }
 
 .form-field label {
