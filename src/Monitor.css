@@ -87,7 +87,7 @@
 }
 
 .monitor-content {
-  background: #e6f3ff;
+  background: #f5f7fa;
   padding: 16px;
   height: calc(100vh - 64px);
 }
@@ -98,25 +98,25 @@
 
 .right-panel {
   height: 100%;
-  background: #4a5568;
+  background: #627688;
   padding: 12px;
   border-radius: 4px;
 }
 
 .patient-record-card {
   height: 100%;
-  background: #cde7ff;
-  border: 1px solid #91d5ff;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
 }
 
 .patient-record-card .ant-card-head {
-  background: #1890ff !important;
-  border-bottom: 1px solid #91d5ff !important;
-  color: #ffffff !important;
+  background: #ffffff !important;
+  border-bottom: 1px solid #d9d9d9 !important;
+  color: rgba(0, 0, 0, 0.85) !important;
 }
 
 .patient-record-card .ant-card-head-title {
-  color: #ffffff !important;
+  color: rgba(0, 0, 0, 0.85) !important;
   font-weight: 600 !important;
 }
 
@@ -124,7 +124,7 @@
   padding: 16px;
   height: calc(100% - 57px);
   overflow-y: auto;
-  background: #cde7ff !important;
+  background: #ffffff !important;
   color: rgba(0, 0, 0, 0.85) !important;
 }
 
