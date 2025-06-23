@@ -105,13 +105,13 @@
 
 .patient-record-card {
   height: 100%;
-  background: #ffffff;
-  border: 1px solid #d9d9d9;
+  background: #cde7ff;
+  border: 1px solid #91d5ff;
 }
 
 .patient-record-card .ant-card-head {
   background: #1890ff !important;
-  border-bottom: 1px solid #d9d9d9 !important;
+  border-bottom: 1px solid #91d5ff !important;
   color: #ffffff !important;
 }
 
@@ -124,7 +124,7 @@
   padding: 16px;
   height: calc(100% - 57px);
   overflow-y: auto;
-  background: #ffffff !important;
+  background: #cde7ff !important;
   color: rgba(0, 0, 0, 0.85) !important;
 }
 
