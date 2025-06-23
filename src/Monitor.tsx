@@ -111,43 +111,121 @@ const Monitor: React.FC = () => {
                   ]}
                 />
 
-                {/* Search and Filter Controls */}
-                <div className="search-section" style={{ margin: "12px 0" }}>
-                  <Row gutter={8}>
-                    <Col span={4}>
-                      <Input placeholder="Search/Refresh" size="small" />
-                    </Col>
-                    <Col span={4}>
-                      <Input placeholder="Filter" size="small" />
-                    </Col>
-                    <Col span={6}>
-                      <DatePicker
-                        placeholder="Last Retrieved Time: 18 Jan 20 08:00"
-                        size="small"
-                        style={{ width: "100%" }}
-                      />
-                    </Col>
-                    <Col span={4}>
-                      <Button size="small" type="primary">
-                        Search Data
-                      </Button>
-                    </Col>
-                    <Col span={6}>
-                      <Text style={{ fontSize: "11px", color: "#666" }}>
-                        Result/Download TPS was successful.
-                      </Text>
-                    </Col>
-                  </Row>
-                </div>
+                {/* Search and Filter Controls Row */}
+                <Row gutter={[8, 8]} style={{ marginBottom: 16 }}>
+                  <Col span={4}>
+                    <Input placeholder="Search/Refresh" size="small" />
+                  </Col>
+                  <Col span={3}>
+                    <Input placeholder="Filter" size="small" />
+                  </Col>
+                  <Col span={6}>
+                    <DatePicker
+                      placeholder="Last Retrieved Time: 18 Jan 20 08:00"
+                      size="small"
+                      style={{ width: "100%" }}
+                    />
+                  </Col>
+                  <Col span={3}>
+                    <Button size="small" type="primary">
+                      Search Data
+                    </Button>
+                  </Col>
+                  <Col span={8}>
+                    <Text style={{ fontSize: "11px", color: "#666" }}>
+                      Result/Download TPS was successful.
+                    </Text>
+                  </Col>
+                </Row>
 
-                {/* Patient Data Table */}
+                {/* Patient Data Table with proper columns */}
                 <Table
-                  columns={patientRecordColumns}
-                  dataSource={patientRecordData}
+                  columns={[
+                    {
+                      title: "Scheduled",
+                      dataIndex: "scheduled",
+                      key: "scheduled",
+                      width: 80,
+                    },
+                    {
+                      title: "Worklist T.",
+                      dataIndex: "worklistT",
+                      key: "worklistT",
+                      width: 80,
+                    },
+                    {
+                      title: "Name",
+                      dataIndex: "name",
+                      key: "name",
+                      width: 100,
+                    },
+                    {
+                      title: "Patient ID",
+                      dataIndex: "patientId",
+                      key: "patientId",
+                      width: 80,
+                    },
+                    {
+                      title: "Accession",
+                      dataIndex: "accession",
+                      key: "accession",
+                      width: 80,
+                    },
+                    {
+                      title: "SPS Descri.",
+                      dataIndex: "spsDescri",
+                      key: "spsDescri",
+                      width: 80,
+                    },
+                    {
+                      title: "Modality",
+                      dataIndex: "modality",
+                      key: "modality",
+                      width: 70,
+                    },
+                    {
+                      title: "Referring Physic.",
+                      dataIndex: "referringPhysic",
+                      key: "referringPhysic",
+                      width: 100,
+                    },
+                    {
+                      title: "Scheduled",
+                      dataIndex: "scheduled2",
+                      key: "scheduled2",
+                      width: 80,
+                    },
+                    {
+                      title: "Status",
+                      dataIndex: "status",
+                      key: "status",
+                      width: 70,
+                    },
+                    {
+                      title: "Local Protocol",
+                      dataIndex: "localProtocol",
+                      key: "localProtocol",
+                      width: 100,
+                    },
+                    {
+                      title: "Recomm.",
+                      dataIndex: "recomm",
+                      key: "recomm",
+                      width: 80,
+                    },
+                    {
+                      title: "Caution",
+                      dataIndex: "caution",
+                      key: "caution",
+                      width: 70,
+                    },
+                  ]}
+                  dataSource={[]}
                   pagination={false}
                   size="small"
                   className="patient-record-table"
                   style={{ marginBottom: 16 }}
+                  bordered
                 />
 
                 {/* Bottom Three Sections */}
