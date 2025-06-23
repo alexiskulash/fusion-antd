@@ -1,15 +1,15 @@
-/* Monitor Page Styles - Consistent Design with Proper Contrast */
+/* Monitor Page Styles - Blue Theme Throughout */
 
 .monitor-layout {
   min-height: 100vh;
-  background: #f0f2f5;
+  background: #e6f3ff;
 }
 
 .monitor-header {
   background: #001529;
   padding: 0;
   height: 64px;
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid #1890ff;
 }
 
 .header-content {
@@ -44,6 +44,10 @@
   border-color: #1890ff !important;
 }
 
+.header-tabs .ant-tabs-content-holder {
+  display: none;
+}
+
 .header-tabs .ant-tabs-tab-btn {
   color: #ffffff !important;
   text-shadow: none !important;
@@ -52,10 +56,6 @@
 .header-tabs .ant-tabs-tab-active .ant-tabs-tab-btn {
   color: #ffffff !important;
   text-shadow: none !important;
-}
-
-.header-tabs .ant-tabs-content-holder {
-  display: none;
 }
 
 .header-center {
@@ -87,7 +87,7 @@
 }
 
 .monitor-content {
-  background: #f0f2f5;
+  background: #e6f3ff;
   padding: 16px;
   height: calc(100vh - 64px);
 }
