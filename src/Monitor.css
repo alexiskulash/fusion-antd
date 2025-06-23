@@ -199,23 +199,23 @@
 }
 
 .pulse-display {
-  background: #5a6268;
-  border: 2px solid #6c757d;
+  background: #4a6cf7;
+  border: 2px solid #6bb3ff;
   border-radius: 8px;
   padding: 16px;
   margin: 8px 0;
 }
 
 .table-card {
-  background: #4a5568;
+  background: #2c5aa0;
   color: #ffffff;
-  border: 1px solid #555555;
+  border: 1px solid #4a6cf7;
 }
 
 .table-card .ant-card-head {
-  background: #374151;
+  background: #1f3a5f;
   color: #ffffff;
-  border-bottom: 1px solid #555555;
+  border-bottom: 1px solid #4a6cf7;
 }
 
 .table-card .ant-card-head-title {
@@ -224,15 +224,15 @@
 }
 
 .table-card .ant-card-body {
-  background: #6b7280;
+  background: #4f80c7;
   color: #ffffff;
   padding: 16px;
   text-align: center;
 }
 
 .table-content {
-  background: #5a6268;
-  border: 2px solid #6c757d;
+  background: #4a6cf7;
+  border: 2px solid #6bb3ff;
   border-radius: 8px;
   padding: 16px;
   margin: 8px 0;
