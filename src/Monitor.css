@@ -475,11 +475,10 @@
   font-size: 12px;
 }
 
-/* Remove all custom color overrides - use default Ant Design styling */
+/* Comprehensive color overrides for consistency */
 .monitor-layout .ant-input,
 .monitor-layout .ant-picker,
 .monitor-layout .ant-select-selector {
-  /* Reset to use default Ant Design styling */
   background: #ffffff !important;
   border: 1px solid #d9d9d9 !important;
   color: rgba(0, 0, 0, 0.85) !important;
@@ -496,6 +495,46 @@
 
 .monitor-layout .ant-select-arrow {
   color: rgba(0, 0, 0, 0.25) !important;
+}
+
+/* Ensure all buttons have proper styling */
+.monitor-layout .ant-btn {
+  border: 1px solid #d9d9d9;
+  background: #ffffff;
+  color: rgba(0, 0, 0, 0.85);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.016);
+}
+
+.monitor-layout .ant-btn:hover {
+  color: #1890ff;
+  border-color: #1890ff;
+}
+
+.monitor-layout .ant-btn-primary {
+  background: #1890ff;
+  border-color: #1890ff;
+  color: #ffffff;
+}
+
+.monitor-layout .ant-btn-primary:hover {
+  background: #40a9ff;
+  border-color: #40a9ff;
+  color: #ffffff;
+}
+
+/* Fix all card shadows for consistency */
+.monitor-layout .ant-card {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure all typography is consistently colored */
+.monitor-layout .ant-typography,
+.monitor-layout .ant-typography.ant-typography-caption {
+  color: rgba(0, 0, 0, 0.85) !important;
+}
+
+.monitor-layout .ant-typography.ant-typography-secondary {
+  color: rgba(0, 0, 0, 0.45) !important;
 }
 
 /* Standard Ant Design dropdown styling */
