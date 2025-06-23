@@ -160,27 +160,27 @@
 }
 
 .status-card {
-  background: #4a5568;
+  background: #2c5aa0;
   color: #ffffff;
-  border: 1px solid #555555;
+  border: 1px solid #4a6cf7;
 }
 
 .status-card .ant-card-body {
-  background: #4a5568;
+  background: #2c5aa0;
   color: #ffffff;
   padding: 12px;
 }
 
 .call-body-card {
-  background: #4a5568;
+  background: #2c5aa0;
   color: #ffffff;
-  border: 1px solid #555555;
+  border: 1px solid #4a6cf7;
 }
 
 .call-body-card .ant-card-head {
-  background: #374151;
+  background: #1f3a5f;
   color: #ffffff;
-  border-bottom: 1px solid #555555;
+  border-bottom: 1px solid #4a6cf7;
 }
 
 .call-body-card .ant-card-head-title {
@@ -189,7 +189,7 @@
 }
 
 .call-body-card .ant-card-body {
-  background: #6b7280;
+  background: #4f80c7;
   color: #ffffff;
   padding: 16px;
 }
