@@ -206,6 +206,8 @@
   height: 100%;
   background: #4a5568 !important;
   border: 1px solid #5a6c7d !important;
+  display: flex;
+  flex-direction: column;
 }
 
 .info-section-card .ant-card-head {
@@ -213,6 +215,7 @@
   color: #ffffff !important;
   border-bottom: 1px solid #4a5568 !important;
   padding: 8px 16px;
+  flex-shrink: 0;
 }
 
 .info-section-card .ant-card-head-title {
@@ -225,6 +228,10 @@
   padding: 12px;
   background: #4a5568 !important;
   color: #ffffff !important;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
 }
 
 /* Force dark theme on all card elements */
