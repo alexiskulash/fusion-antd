@@ -571,8 +571,8 @@ const Scheduler: React.FC = () => {
             <div
               className="notification-bar"
               style={{
-                marginTop: 16,
-                padding: "8px 16px",
+                marginTop: 8,
+                padding: "4px 12px",
                 background: "#1a1a1a",
                 borderRadius: "4px",
                 border: "1px solid #444444",
