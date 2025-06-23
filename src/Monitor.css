@@ -210,15 +210,23 @@
 }
 
 .status-card {
-  background: #e6f7ff;
+  background: #ffffff;
   color: rgba(0, 0, 0, 0.85);
-  border: 1px solid #91d5ff;
+  border: 1px solid #d9d9d9;
 }
 
 .status-card .ant-card-body {
-  background: #e6f7ff;
+  background: #ffffff;
   color: rgba(0, 0, 0, 0.85);
   padding: 12px;
+}
+
+.status-card .ant-typography {
+  color: rgba(0, 0, 0, 0.85) !important;
+}
+
+.status-card .ant-typography.ant-typography-secondary {
+  color: rgba(0, 0, 0, 0.45) !important;
 }
 
 .call-body-card {
