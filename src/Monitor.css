@@ -248,6 +248,7 @@
   background: #ffffff;
   color: rgba(0, 0, 0, 0.85);
   border: 1px solid #d9d9d9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .call-body-card .ant-card-head {
@@ -257,8 +258,9 @@
 }
 
 .call-body-card .ant-card-head-title {
-  color: #ffffff;
+  color: #ffffff !important;
   font-size: 13px;
+  font-weight: 600;
 }
 
 .call-body-card .ant-card-body {
