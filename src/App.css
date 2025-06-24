@@ -1,143 +1,732 @@
-/* Ant Design App Styles */
+/* Patient Scheduler Styles */
 
-.app-layout {
+.patient-scheduler-layout {
   min-height: 100vh;
+  background: #1a1a1a;
 }
 
-.app-header {
-  background: linear-gradient(135deg, #1890ff 0%, #722ed1 100%);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+.scheduler-header {
+  background: #2d2d2d;
+  border-bottom: 1px solid #444444;
+  padding: 0;
 }
 
 .header-content {
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 100%;
   padding: 0 24px;
   height: 100%;
   display: flex;
   align-items: center;
 }
 
-.app-content {
-  background: linear-gradient(135deg, #f0f2f5 0%, #e6f7ff 100%);
-  padding: 48px 24px;
+.scheduler-sider {
+  background: #2d2d2d;
+  border-right: 1px solid #444444;
 }
 
-.content-container {
-  max-width: 1200px;
-  margin: 0 auto;
+.sider-content {
+  padding: 16px;
+  height: 100%;
 }
 
-.logo-section {
-  text-align: center;
-  margin: 24px 0;
+.search-section {
+  margin-bottom: 16px;
 }
 
-.spinning-logo {
-  animation: logo-spin infinite 20s linear;
+.search-input {
+  margin-bottom: 8px;
+  background: #3d3d3d;
+  border: 1px solid #555555;
+  color: #ffffff;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search-input .ant-input {
+  background: transparent;
+  color: #ffffff;
 }
 
-.main-card {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  border-radius: 12px;
-  border: none;
+.search-input .ant-input::placeholder {
+  color: #888888;
 }
 
-.main-card .ant-card-head {
-  border-bottom: 1px solid #e8f4fd;
-  background: linear-gradient(135deg, #fafafa 0%, #f0f2f5 100%);
-  border-radius: 12px 12px 0 0;
+.program-select {
+  width: 100%;
 }
 
-.counter-section {
-  text-align: center;
-  padding: 16px 0;
+.program-select .ant-select-selector {
+  background: #3d3d3d;
+  border: 1px solid #555555;
+  color: #ffffff;
+}
+
+.patients-section {
+  margin-top: 16px;
+}
+
+.section-header {
+  margin-bottom: 12px;
+  border-bottom: 1px solid #444444;
+  padding-bottom: 8px;
+}
+
+.patient-filters {
+  margin-bottom: 12px;
+}
+
+.patient-filters .ant-input {
+  background: #3d3d3d;
+  border: 1px solid #555555;
+  color: #ffffff;
+}
+
+.patient-filters .ant-input::placeholder {
+  color: #888888;
+}
+
+.patients-table {
+  background: transparent;
+}
+
+.patients-table .ant-table-thead > tr > th {
+  background: #3d3d3d;
+  border-bottom: 1px solid #444444;
+  color: #ffffff;
+  font-size: 11px;
+  padding: 4px 8px;
+}
+
+.patients-table .ant-table-tbody > tr {
+  background: transparent;
+  border-bottom: 1px solid #444444;
+}
+
+.patients-table .ant-table-tbody > tr:hover {
+  background: #3d3d3d;
+}
+
+.patients-table .ant-table-tbody > tr > td {
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+.patient-row {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.patient-row.selected {
+  background: #1890ff;
+  border-radius: 4px;
+  padding: 8px;
+  margin: -8px 0;
+}
+
+.main-content {
+  background: #1a1a1a;
+  padding: 8px;
+}
+
+.content-wrapper {
+  max-width: 100%;
 }
 
 .info-card {
-  text-align: center;
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 12px;
+  background: #2d2d2d;
+  border: 1px solid #444444;
+  margin-bottom: 16px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-.app-footer {
+.info-card .ant-card-head {
+  background: #3d3d3d;
+  border-bottom: 1px solid #444444;
+  color: #ffffff;
+}
+
+.info-card .ant-card-head-title {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.info-card .ant-card-body {
+  background: #2d2d2d;
+  color: #ffffff;
+  flex: 1;
+}
+
+.alerts-card .alert-item {
+  margin-bottom: 12px;
+  padding: 8px;
+  background: #3d3d3d;
+  border-radius: 4px;
+}
+
+.alert-content {
+  margin-top: 4px;
+  color: #cccccc;
+  font-style: italic;
+}
+
+.checkbox-group div {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #ffffff;
+}
+
+.orientation-selector {
+  display: flex;
+  justify-content: center;
+}
+
+.action-buttons {
+  margin-top: 24px;
+  padding: 16px;
+  background: #2d2d2d;
+  border-radius: 8px;
+  border: 1px solid #444444;
   text-align: center;
-  background: #001529;
-  color: rgba(255, 255, 255, 0.65);
+}
+
+/* Form Controls Dark Theme */
+.ant-form-item-label > label {
+  color: #cccccc;
+}
+
+.ant-select-selector {
+  background: #3d3d3d !important;
+  border: 1px solid #555555 !important;
+  color: #ffffff !important;
+}
+
+.ant-select-arrow {
+  color: #cccccc;
+}
+
+.ant-input {
+  background: #3d3d3d;
+  border: 1px solid #555555;
+  color: #ffffff;
+}
+
+.ant-input::placeholder {
+  color: #888888;
+}
+
+.ant-input:focus,
+.ant-input-focused {
+  border-color: #1890ff;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+.ant-btn {
+  border: 1px solid #555555;
+  background: #3d3d3d;
+  color: #ffffff;
+}
+
+.ant-btn:hover {
+  border-color: #1890ff;
+  color: #1890ff;
+}
+
+.ant-btn-primary {
+  background: #1890ff;
+  border-color: #1890ff;
+  color: #ffffff;
+}
+
+.ant-btn-primary:hover {
+  background: #40a9ff;
+  border-color: #40a9ff;
+}
+
+.ant-switch {
+  background: #555555;
+}
+
+.ant-switch-checked {
+  background: #1890ff;
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .app-content {
-    padding: 24px 16px;
+  .scheduler-sider {
+    width: 200px !important;
   }
 
-  .header-content {
-    padding: 0 16px;
+  .main-content {
+    padding: 8px;
   }
 
-  .header-content .ant-typography {
-    font-size: 18px !important;
+  .action-buttons {
+    padding: 12px;
   }
 
-  .logo-section .ant-space {
+  .action-buttons .ant-space {
+    flex-wrap: wrap;
     justify-content: center;
   }
 }
 
 @media (max-width: 576px) {
-  .counter-section .ant-space {
-    flex-direction: column;
-    gap: 12px !important;
+  .scheduler-sider {
+    width: 100% !important;
+    position: absolute;
+    z-index: 100;
+    height: auto;
   }
 
-  .info-card .ant-space {
-    flex-direction: column;
-    width: 100%;
+  .sider-content {
+    padding: 12px;
   }
 
-  .info-card .ant-btn {
-    width: 100%;
+  .action-buttons .ant-btn {
+    margin: 2px;
+    font-size: 12px;
   }
 }
 
-/* Ant Design theme enhancements */
-.ant-btn-primary {
-  background: linear-gradient(135deg, #1890ff 0%, #40a9ff 100%);
-  border: none;
-  box-shadow: 0 2px 4px rgba(24, 144, 255, 0.3);
+/* Table Customizations */
+.ant-table {
+  background: transparent;
 }
 
-.ant-btn-primary:hover {
-  background: linear-gradient(135deg, #40a9ff 0%, #1890ff 100%);
-  transform: translateY(-1px);
-  box-shadow: 0 4px 8px rgba(24, 144, 255, 0.4);
+.ant-table-thead > tr > th {
+  background: #3d3d3d;
+  border-bottom: 1px solid #444444;
+  color: #ffffff;
 }
 
-.ant-badge .ant-badge-count {
-  background: #52c41a;
-  box-shadow: 0 2px 4px rgba(82, 196, 26, 0.3);
+.ant-table-tbody > tr > td {
+  border-bottom: 1px solid #444444;
+  color: #ffffff;
 }
 
-/* Smooth transitions */
-.ant-btn,
-.ant-card,
+/* Badge customizations */
+.ant-badge-status-dot {
+  width: 8px;
+  height: 8px;
+}
+
+.ant-badge-status-success {
+  background-color: #52c41a;
+}
+
+/* Avatar customizations */
 .ant-avatar {
-  transition: all 0.3s ease;
+  background: #1890ff;
 }
 
-.ant-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+/* Typography in dark theme */
+.ant-typography {
+  color: #ffffff;
+}
+
+.ant-typography.ant-typography-secondary {
+  color: #cccccc;
+}
+
+/* Select dropdown dark theme */
+.ant-select-dropdown {
+  background: #2d2d2d;
+  border: 1px solid #444444;
+}
+
+.ant-select-item {
+  color: #ffffff;
+}
+
+.ant-select-item:hover {
+  background: #3d3d3d;
+}
+
+.ant-select-item-option-selected {
+  background: #1890ff;
+  color: #ffffff;
+}
+
+/* Form validation in dark theme */
+.ant-form-item-explain-error {
+  color: #ff4d4f;
+}
+
+.ant-form-item-has-error .ant-input {
+  border-color: #ff4d4f;
+}
+
+.ant-form-item-has-error .ant-select-selector {
+  border-color: #ff4d4f !important;
+}
+
+/* Compact column layout */
+.column-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  height: calc(100vh - 120px);
+}
+
+/* Compact card styling */
+.compact-card {
+  margin-bottom: 4px !important;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.compact-card.ant-card-small .ant-card-head {
+  min-height: 24px !important;
+  padding: 0 6px !important;
+}
+
+.compact-card.ant-card-small .ant-card-head-title {
+  font-size: 11px !important;
+  line-height: 24px !important;
+  font-weight: 600 !important;
+}
+
+.compact-card.ant-card-small .ant-card-body {
+  padding: 4px 6px !important;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Make textareas fill available space */
+.compact-card .ant-input {
+  flex: 1;
+}
+
+.compact-card .form-field:last-child .ant-input {
+  flex: 1;
+  min-height: 60px;
+}
+
+/* Form field styling to match original */
+.form-field {
+  margin-bottom: 3px;
+}
+
+/* Ultra compact layout for Medical Information and Examination cards */
+.compact-card .form-field .ant-input,
+.compact-card .form-field .ant-select,
+.compact-card .form-field .ant-input-data-count {
+  height: 20px !important;
+  font-size: 10px !important;
+  padding: 2px 6px !important;
+}
+
+.compact-card .form-field .ant-select-selector {
+  height: 20px !important;
+  padding: 0 6px !important;
+}
+
+.compact-card .form-field .ant-select-selection-item {
+  line-height: 18px !important;
+  font-size: 10px !important;
+}
+
+.compact-card .form-field label {
+  font-size: 10px !important;
+  margin-bottom: 1px !important;
+  line-height: 1.2 !important;
+}
+
+/* Make textarea fields fill remaining space in cards */
+.compact-card .form-field .ant-input {
+  resize: none;
+}
+
+/* Specific styling for different sections */
+.compact-card:nth-child(1) {
+  flex: 0 0 80px;
+}
+
+.compact-card:nth-child(2) {
+  flex: 1;
+}
+
+.compact-card:nth-child(3) {
+  flex: 1;
+}
+
+/* Remove extra margins and padding everywhere */
+.content-wrapper .ant-row {
+  margin: 0 !important;
+}
+
+.content-wrapper .ant-col {
+  padding: 0 4px !important;
+}
+
+/* Notification bar styling to match screenshots */
+.notification-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.notification-bar .ant-btn {
+  height: 28px;
+  border-radius: 3px;
+  font-weight: 500;
+}
+
+.notification-bar .ant-btn:not(.ant-btn-primary) {
+  background: #4a4a4a;
+  border-color: #666666;
+  color: #ffffff;
+}
+
+.notification-bar .ant-btn:not(.ant-btn-primary):hover {
+  background: #5a5a5a;
+  border-color: #777777;
+}
+
+/* Sidebar styling to match screenshots */
+.search-input-large {
+  height: 40px !important;
+  background: #5a6c7d !important;
+  border: 1px solid #6a7c8d !important;
+  border-radius: 6px !important;
+  color: #ffffff !important;
+}
+
+.search-input-large .ant-input {
+  background: transparent !important;
+  color: #ffffff !important;
+  font-size: 14px !important;
+  height: 36px !important;
+}
+
+.search-input-large .ant-input::placeholder {
+  color: #cccccc !important;
+}
+
+.program-select-large {
+  height: 40px !important;
+  width: 100% !important;
+}
+
+.program-select-large .ant-select-selector {
+  height: 40px !important;
+  background: #5a6c7d !important;
+  border: 1px solid #6a7c8d !important;
+  border-radius: 6px !important;
+  color: #ffffff !important;
+}
+
+.program-select-large .ant-select-selection-item {
+  color: #ffffff !important;
+  font-size: 14px !important;
+  line-height: 38px !important;
+}
+
+.filter-input {
+  height: 32px !important;
+  background: #4a4a4a !important;
+  border: 1px solid #666666 !important;
+  border-radius: 4px !important;
+  color: #ffffff !important;
+}
+
+.filter-input .ant-input {
+  background: transparent !important;
+  color: #ffffff !important;
+  font-size: 13px !important;
+}
+
+.filter-input .ant-input::placeholder {
+  color: #aaaaaa !important;
+}
+
+/* Patient table styling to match screenshots */
+.patients-table .ant-table-thead > tr > th {
+  background: #4a4a4a !important;
+  border-bottom: 1px solid #666666 !important;
+  color: #ffffff !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  padding: 8px 12px !important;
+}
+
+.patients-table .ant-table-tbody > tr {
+  background: transparent !important;
+  border-bottom: 1px solid #555555 !important;
+}
+
+.patients-table .ant-table-tbody > tr:hover {
+  background: #3a3a3a !important;
+}
+
+.patients-table .ant-table-tbody > tr.ant-table-row-selected {
+  background: #1890ff !important;
+}
+
+.patients-table .ant-table-tbody > tr > td {
+  padding: 12px !important;
+  border-bottom: 1px solid #555555 !important;
+  color: #ffffff !important;
+  font-size: 13px !important;
+}
+
+.form-field label {
+  display: block;
+  color: #cccccc;
+  font-size: 11px;
+  margin-bottom: 2px;
+  font-weight: normal;
+}
+
+.form-field .ant-input,
+.form-field .ant-select,
+.form-field .ant-picker {
+  background: #3d3d3d;
+  border: 1px solid #555555;
+  color: #ffffff;
+  font-size: 11px;
+  height: 24px;
+}
+
+.form-field .ant-input::placeholder {
+  color: #888888;
+}
+
+.form-field .ant-select-selector {
+  background: #3d3d3d !important;
+  border: 1px solid #555555 !important;
+  color: #ffffff !important;
+  height: 24px !important;
+}
+
+.form-field .ant-select-selection-item {
+  color: #ffffff !important;
+  font-size: 11px !important;
+}
+
+.form-field .ant-picker {
+  background: #3d3d3d !important;
+  border: 1px solid #555555 !important;
+}
+
+.form-field .ant-picker .ant-picker-input input {
+  background: transparent !important;
+  color: #ffffff !important;
+  font-size: 11px !important;
+}
+
+/* Compact card styling */
+.info-card.ant-card-small .ant-card-head {
+  min-height: 32px;
+  padding: 0 12px;
+}
+
+.info-card.ant-card-small .ant-card-head-title {
+  font-size: 12px;
+  line-height: 32px;
+}
+
+.info-card.ant-card-small .ant-card-body {
+  padding: 8px 12px;
+}
+
+/* Remove default form item margins for compact layout */
+.content-wrapper .ant-form-item {
+  margin-bottom: 0;
+}
+
+.content-wrapper .ant-form-item-label {
+  padding-bottom: 0;
+}
+
+/* Checkbox group styling */
+.checkbox-group {
+  margin-top: 8px;
+}
+
+.checkbox-group div {
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  font-size: 12px;
+}
+
+/* Patient details card specific styling */
+.patient-details-card {
+  background: #2d2d2d !important;
+  border: 1px solid #444444 !important;
+}
+
+.patient-details-card .ant-card-head {
+  background: #3d3d3d !important;
+  border-bottom: 1px solid #444444 !important;
+}
+
+.patient-details-card .ant-card-head-title {
+  color: #ffffff !important;
+}
+
+.patient-details-card .ant-card-body {
+  background: #2d2d2d !important;
+  color: #ffffff !important;
+}
+
+.patient-form .form-field {
+  margin-bottom: 12px;
+}
+
+.patient-form .form-field label {
+  display: block;
+  color: #cccccc;
+  font-size: 11px;
+  margin-bottom: 4px;
+  font-weight: normal;
+}
+
+.patient-form .form-field .ant-input,
+.patient-form .form-field .ant-select,
+.patient-form .form-field .ant-picker {
+  background: #3d3d3d;
+  border: 1px solid #555555;
+  color: #ffffff;
+  font-size: 11px;
+  height: 24px;
+}
+
+.patient-form .form-field .ant-input::placeholder {
+  color: #888888;
+}
+
+.patient-form .form-field .ant-select-selector {
+  background: #3d3d3d !important;
+  border: 1px solid #555555 !important;
+  color: #ffffff !important;
+  height: 24px !important;
+}
+
+.patient-form .form-field .ant-select-selection-item {
+  color: #ffffff !important;
+  font-size: 11px !important;
+}
+
+.patient-form .form-field .ant-picker {
+  background: #3d3d3d !important;
+  border: 1px solid #555555 !important;
+}
+
+.patient-form .form-field .ant-picker .ant-picker-input input {
+  background: transparent !important;
+  color: #ffffff !important;
+  font-size: 11px !important;
 }

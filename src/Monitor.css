@@ -1,0 +1,825 @@
+/* Monitor Page Styles - Slate Blue Theme Throughout */
+
+.monitor-layout {
+  min-height: 100vh;
+  background: #f0f2f5;
+  display: flex;
+  flex-direction: column;
+}
+
+.monitor-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.monitor-content .ant-row {
+  flex: 1;
+  display: flex;
+}
+
+.monitor-content .ant-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.monitor-header {
+  background: #7a8ca0;
+  padding: 0;
+  height: 64px;
+  border-bottom: 1px solid #8999ad;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 24px;
+  position: relative;
+}
+
+.header-tabs {
+  flex: 0 0 auto;
+}
+
+.header-tabs .ant-tabs-nav {
+  margin-bottom: 0 !important;
+}
+
+.header-tabs .ant-tabs-tab {
+  color: #ffffff !important;
+  background: #34495e !important;
+  border: 1px solid #4a5568 !important;
+  margin-right: 8px;
+  border-radius: 4px !important;
+  padding: 8px 16px !important;
+  margin-bottom: 0 !important;
+}
+
+.header-tabs .ant-tabs-tab:hover {
+  color: #ffffff !important;
+  background: #4a5568 !important;
+}
+
+.header-tabs .ant-tabs-tab-active {
+  background: #1890ff !important;
+  color: #ffffff !important;
+  border-color: #1890ff !important;
+}
+
+.header-tabs .ant-tabs-content-holder {
+  display: none;
+}
+
+.header-tabs .ant-tabs-tab-btn {
+  color: #ffffff !important;
+  text-shadow: none !important;
+  font-size: 14px !important;
+}
+
+.header-tabs .ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #ffffff !important;
+  text-shadow: none !important;
+}
+
+.header-tabs .ant-tabs-ink-bar {
+  display: none !important;
+}
+
+.header-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header-center .ant-typography {
+  color: #ffffff !important;
+  text-shadow: none !important;
+}
+
+.header-center .ant-typography strong {
+  color: #ffffff !important;
+  font-weight: 600 !important;
+}
+
+.header-center * {
+  color: #ffffff !important;
+}
+
+.header-right {
+  margin-left: auto;
+}
+
+.header-right .ant-typography {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.monitor-content {
+  background: #f5f7fa;
+  padding: 16px;
+  height: calc(100vh - 64px);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.left-panel {
+  height: 100%;
+}
+
+.right-panel {
+  height: 100%;
+  background: #627688;
+  padding: 12px;
+  border-radius: 4px;
+}
+
+.patient-record-card {
+  height: 100%;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  display: flex;
+  flex-direction: column;
+}
+
+.patient-record-card .ant-card-head {
+  background: #ffffff !important;
+  border-bottom: 1px solid #d9d9d9 !important;
+  color: rgba(0, 0, 0, 0.85) !important;
+  flex-shrink: 0;
+}
+
+.patient-record-card .ant-card-head-title {
+  color: rgba(0, 0, 0, 0.85) !important;
+  font-weight: 600 !important;
+}
+
+.patient-record-card .ant-card-body {
+  padding: 16px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  background: #ffffff !important;
+  color: rgba(0, 0, 0, 0.85) !important;
+}
+
+.patient-record-table .ant-table-thead > tr > th {
+  background: #fafafa !important;
+  border-bottom: 1px solid #d9d9d9 !important;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 8px;
+  color: rgba(0, 0, 0, 0.85) !important;
+}
+
+.patient-record-table .ant-table-tbody > tr > td {
+  padding: 4px 8px;
+  font-size: 12px;
+  border-bottom: 1px solid #f0f0f0 !important;
+  color: rgba(0, 0, 0, 0.85) !important;
+  background: #ffffff !important;
+}
+
+.patient-record-table .ant-table-tbody > tr:hover {
+  background: #f5f5f5 !important;
+}
+
+.patient-record-table .ant-table-tbody > tr:hover > td {
+  color: rgba(0, 0, 0, 0.85) !important;
+  background: #f5f5f5 !important;
+}
+
+/* Ensure all text in patient record table is dark */
+.patient-record-table,
+.patient-record-table * {
+  color: rgba(0, 0, 0, 0.85) !important;
+}
+
+.patient-record-table .ant-table {
+  background: #ffffff !important;
+  color: rgba(0, 0, 0, 0.85) !important;
+}
+
+.patient-record-table .ant-table-container {
+  background: #ffffff !important;
+}
+
+.info-section-card {
+  height: 100%;
+  background: #4a5568 !important;
+  border: 1px solid #5a6c7d !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-section-card .ant-card-head {
+  background: #2d3748 !important;
+  color: #ffffff !important;
+  border-bottom: 1px solid #4a5568 !important;
+  padding: 8px 16px;
+  flex-shrink: 0;
+}
+
+.info-section-card .ant-card-head-title {
+  color: #ffffff !important;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.info-section-card .ant-card-body {
+  padding: 12px;
+  background: #4a5568 !important;
+  color: #ffffff !important;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+/* Force dark theme on all card elements */
+.info-section-card.ant-card {
+  background: #4a5568 !important;
+  border: 1px solid #5a6c7d !important;
+}
+
+.info-section-card.ant-card .ant-card-body {
+  background: #4a5568 !important;
+  color: #ffffff !important;
+}
+
+.info-section-card .ant-form-item {
+  margin-bottom: 8px;
+}
+
+.info-section-card .ant-form-item-label > label {
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 11px;
+}
+
+.info-section-card .ant-input,
+.info-section-card .ant-select-selector {
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 11px;
+  height: 24px;
+}
+
+.info-section-card .ant-input::placeholder {
+  color: rgba(0, 0, 0, 0.25);
+}
+
+.info-section-card .ant-select-selector .ant-select-selection-search-input {
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.info-section-card .ant-picker {
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+}
+
+.info-section-card .ant-picker .ant-picker-input input {
+  background: transparent;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.other-info-content {
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 11px;
+}
+
+.other-info-content .ant-typography {
+  color: rgba(0, 0, 0, 0.45);
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+.monitoring-sections {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.status-card {
+  background: #91d5ff;
+  color: rgba(0, 0, 0, 0.85);
+  border: 1px solid #69c0ff;
+}
+
+.status-card .ant-card-body {
+  background: #91d5ff;
+  color: rgba(0, 0, 0, 0.85);
+  padding: 12px;
+}
+
+.status-card .ant-typography {
+  color: rgba(0, 0, 0, 0.85) !important;
+}
+
+.status-card .ant-typography.ant-typography-secondary {
+  color: rgba(0, 0, 0, 0.65) !important;
+}
+
+.call-body-card {
+  background: #ffffff;
+  color: rgba(0, 0, 0, 0.85);
+  border: 1px solid #d9d9d9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.call-body-card .ant-card-head {
+  background: #1890ff;
+  color: #ffffff;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.call-body-card .ant-card-head-title {
+  color: #ffffff !important;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.call-body-card .ant-card-body {
+  background: #ffffff;
+  color: rgba(0, 0, 0, 0.85);
+  padding: 16px;
+}
+
+.call-body-content {
+  text-align: center;
+}
+
+.pulse-display {
+  background: #f0f0f0;
+  border: 2px solid #d9d9d9;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 8px 0;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.pulse-display * {
+  color: rgba(0, 0, 0, 0.85) !important;
+}
+
+.pulse-display .ant-typography {
+  color: rgba(0, 0, 0, 0.85) !important;
+}
+
+.table-card {
+  background: #ffffff;
+  color: rgba(0, 0, 0, 0.85);
+  border: 1px solid #d9d9d9;
+}
+
+.table-card .ant-card-head {
+  background: #1890ff;
+  color: #ffffff;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.table-card .ant-card-head-title {
+  color: #ffffff;
+  font-size: 13px;
+}
+
+.table-card .ant-card-body {
+  background: #ffffff;
+  color: rgba(0, 0, 0, 0.85);
+  padding: 16px;
+  text-align: center;
+}
+
+.table-content {
+  background: #fafafa;
+  border: 2px solid #d9d9d9;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 8px 0;
+  color: rgba(0, 0, 0, 0.85);
+  text-align: center;
+}
+
+.table-content * {
+  color: rgba(0, 0, 0, 0.85) !important;
+}
+
+.controls-card {
+  background: #ffffff;
+  color: rgba(0, 0, 0, 0.85);
+  border: 1px solid #d9d9d9;
+  flex: 1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.controls-card .ant-card-body {
+  background: #ffffff;
+  color: rgba(0, 0, 0, 0.85);
+  padding: 16px;
+}
+
+.sar-display {
+  background: #fafafa;
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid #d9d9d9;
+}
+
+.sar-display .ant-typography {
+  color: rgba(0, 0, 0, 0.85) !important;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.sar-display .ant-table {
+  background: #ffffff;
+}
+
+.sar-display .ant-table-thead > tr > th {
+  background: #fafafa !important;
+  color: rgba(0, 0, 0, 0.85) !important;
+  border-bottom: 1px solid #d9d9d9 !important;
+  font-size: 10px;
+  padding: 4px;
+  font-weight: 600;
+}
+
+.sar-display .ant-table-tbody > tr > td {
+  background: #ffffff !important;
+  color: rgba(0, 0, 0, 0.85) !important;
+  border-bottom: 1px solid #f0f0f0 !important;
+  font-size: 10px;
+  padding: 4px;
+}
+
+/* Search section styling */
+.search-section .ant-input,
+.search-section .ant-btn {
+  height: 28px;
+}
+
+.search-section .ant-input {
+  background: #5a6c7d !important;
+  border: 1px solid #4a5568 !important;
+  color: #ffffff !important;
+}
+
+.search-section .ant-input::placeholder {
+  color: #cccccc !important;
+}
+
+.search-section .ant-picker {
+  background: #5a6c7d !important;
+  border: 1px solid #4a5568 !important;
+}
+
+.search-section .ant-picker .ant-picker-input input {
+  background: transparent !important;
+  color: #ffffff !important;
+}
+
+.search-section .ant-picker .ant-picker-input input::placeholder {
+  color: #cccccc !important;
+}
+
+/* Patient Record specific input styling */
+.patient-record-card .ant-input {
+  background: #5a6c7d !important;
+  border: 1px solid #4a5568 !important;
+  color: #ffffff !important;
+}
+
+.patient-record-card .ant-input::placeholder {
+  color: #cccccc !important;
+}
+
+.patient-record-card .ant-btn {
+  background: #5a6c7d !important;
+  border: 1px solid #4a5568 !important;
+  color: #ffffff !important;
+}
+
+.patient-record-card .ant-btn:hover {
+  background: #6b7a8a !important;
+  border-color: #5a6c7d !important;
+  color: #ffffff !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .header-center {
+    position: static;
+    transform: none;
+    margin: 0 16px;
+  }
+
+  .header-content {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 768px) {
+  .monitor-content {
+    padding: 8px;
+  }
+
+  .left-panel,
+  .right-panel {
+    margin-bottom: 16px;
+  }
+
+  .header-content {
+    flex-direction: column;
+    height: auto;
+    padding: 8px 16px;
+  }
+
+  .header-tabs,
+  .header-center,
+  .header-right {
+    margin: 4px 0;
+  }
+}
+
+/* Form adjustments for small cards */
+.info-section-card .ant-form-item-label {
+  padding-bottom: 2px;
+}
+
+.info-section-card .ant-form-item-control {
+  line-height: 1.2;
+}
+
+.search-section .ant-input,
+.search-section .ant-btn {
+  height: 28px;
+}
+
+/* Tab customizations */
+.ant-tabs-tab {
+  padding: 8px 12px;
+  font-size: 12px;
+}
+
+.ant-tabs-tab-btn {
+  color: inherit;
+}
+
+.ant-tabs-content-holder {
+  padding-top: 8px;
+}
+
+/* Button customizations */
+.ant-btn {
+  font-size: 12px;
+}
+
+/* Text size adjustments */
+.ant-typography {
+  font-size: 12px;
+}
+
+.status-card {
+  background: #ffffff;
+  color: rgba(0, 0, 0, 0.85);
+  border: 1px solid #d9d9d9;
+}
+
+.status-card .ant-card-body {
+  background: #ffffff;
+  color: rgba(0, 0, 0, 0.85);
+  padding: 12px;
+}
+
+.status-card .ant-typography {
+  color: rgba(0, 0, 0, 0.85) !important;
+}
+
+.status-card .ant-typography.ant-typography-secondary {
+  color: rgba(0, 0, 0, 0.65) !important;
+}
+
+/* Ensure all buttons have proper styling */
+.monitor-layout .ant-btn {
+  border: 1px solid #d9d9d9;
+  background: #ffffff;
+  color: rgba(0, 0, 0, 0.85);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.016);
+}
+
+.monitor-layout .ant-btn:hover {
+  color: #1890ff;
+  border-color: #1890ff;
+}
+
+.monitor-layout .ant-btn-primary {
+  background: #1890ff;
+  border-color: #1890ff;
+  color: #ffffff;
+}
+
+.monitor-layout .ant-btn-primary:hover {
+  background: #40a9ff;
+  border-color: #40a9ff;
+  color: #ffffff;
+}
+
+/* Fix all card shadows for consistency */
+.monitor-layout .ant-card {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure all typography is consistently colored */
+.monitor-layout .ant-typography,
+.monitor-layout .ant-typography.ant-typography-caption {
+  color: rgba(0, 0, 0, 0.85) !important;
+}
+
+.monitor-layout .ant-typography.ant-typography-secondary {
+  color: rgba(0, 0, 0, 0.45) !important;
+}
+
+/* Standard Ant Design dropdown styling */
+.ant-select-dropdown {
+  background: #ffffff !important;
+  border: 1px solid #d9d9d9 !important;
+  box-shadow:
+    0 3px 6px -4px rgba(0, 0, 0, 0.12),
+    0 6px 16px 0 rgba(0, 0, 0, 0.08),
+    0 9px 28px 8px rgba(0, 0, 0, 0.05);
+}
+
+.ant-select-item {
+  background: #ffffff !important;
+  color: rgba(0, 0, 0, 0.85) !important;
+}
+
+.ant-select-item:hover {
+  background: #f5f5f5 !important;
+}
+
+.ant-select-item-option-selected {
+  background: #e6f7ff !important;
+  color: #1890ff !important;
+}
+
+/* Standard DatePicker dropdown styling */
+.ant-picker-dropdown {
+  background: #ffffff !important;
+}
+
+.ant-picker-panel {
+  background: #ffffff !important;
+  border: 1px solid #d9d9d9 !important;
+}
+
+.ant-picker-header {
+  background: #fafafa !important;
+  border-bottom: 1px solid #d9d9d9 !important;
+}
+
+.ant-picker-body {
+  background: #ffffff !important;
+}
+
+.ant-picker-cell {
+  color: rgba(0, 0, 0, 0.85) !important;
+}
+
+.ant-picker-cell:hover .ant-picker-cell-inner {
+  background: #f5f5f5 !important;
+}
+
+.ant-picker-cell-selected .ant-picker-cell-inner {
+  background: #1890ff !important;
+  color: #ffffff !important;
+}
+
+/* Right panel blue theme matching screenshot */
+.right-panel .ant-card {
+  background: #4a5568 !important;
+  border: 1px solid #5a6c7d !important;
+  color: #ffffff !important;
+}
+
+.right-panel .ant-card-head {
+  background: #3a4553 !important;
+  border-bottom: 1px solid #5a6c7d !important;
+  color: #ffffff !important;
+}
+
+.right-panel .ant-card-head-title {
+  color: #ffffff !important;
+}
+
+.right-panel .ant-card-body {
+  background: #4a5568 !important;
+  color: #ffffff !important;
+}
+
+.right-panel .ant-typography {
+  color: #ffffff !important;
+}
+
+.right-panel .ant-btn {
+  background: #5a6c7d;
+  border-color: #6b7c8f;
+  color: #ffffff;
+}
+
+.right-panel .ant-btn:hover {
+  background: #6b7c8f;
+  border-color: #7c8da0;
+  color: #ffffff;
+}
+
+/* SAR Display table styling */
+.sar-card .ant-table {
+  background: transparent !important;
+}
+
+.sar-card .ant-table-thead > tr > th {
+  background: #3a4553 !important;
+  color: #ffffff !important;
+  border-bottom: 1px solid #5a6c7d !important;
+  font-size: 10px !important;
+  padding: 4px !important;
+}
+
+.sar-card .ant-table-tbody > tr > td {
+  background: #4a5568 !important;
+  color: #ffffff !important;
+  border-bottom: 1px solid #5a6c7d !important;
+  font-size: 10px !important;
+  padding: 4px !important;
+}
+
+/* Form fields styling for Patient, Exam, Other Info sections */
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 8px;
+}
+
+.form-fields .form-field {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+}
+
+.form-fields .form-field label {
+  display: block;
+  font-size: 11px;
+  color: #ffffff !important;
+  margin-bottom: 2px;
+  font-weight: normal;
+  flex-shrink: 0;
+}
+
+.form-fields .form-field .ant-input,
+.form-fields .form-field .ant-select,
+.form-fields .form-field .ant-picker {
+  font-size: 11px;
+  background: #ffffff !important;
+  border: 1px solid #d9d9d9 !important;
+  color: rgba(0, 0, 0, 0.85) !important;
+  flex: 1;
+  min-height: 22px;
+}
+
+.form-fields .form-field .ant-input[type="textarea"] {
+  resize: none;
+  min-height: 60px;
+}
+
+.form-fields .form-field .ant-select-selector {
+  background: #ffffff !important;
+  border: 1px solid #d9d9d9 !important;
+  color: rgba(0, 0, 0, 0.85) !important;
+  min-height: 22px;
+}
+
+.form-fields .form-field .ant-input::placeholder {
+  color: rgba(0, 0, 0, 0.45) !important;
+}
+
+/* Compact spacing for bottom sections */
+.info-section-card .ant-card-body {
+  padding: 8px !important;
+}
+
+/* Blue theme for pulse display */
+.call-body-card .pulse-display {
+  background: #5a6c7d !important;
+  border: 2px solid #6b7c8f !important;
+  color: #ffffff !important;
+}
+
+.table-card .table-content {
+  background: #5a6c7d !important;
+  border: 2px solid #6b7c8f !important;
+  color: #ffffff !important;
+}
